@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/mayuri/Downloads/fb_spark/project/project/}fb_spark-build-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/}fb_spark-build-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#fb_spark-build-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -16,7 +16,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#fb_spark-build-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#fb_spark-build-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@eb28ace[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3422120e[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -1766,19 +1766,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 942ms :: artifacts dl 30ms[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT compile produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT runtime produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT test produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT provided produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT optional produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT compile-internal produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT runtime-internal produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT test-internal produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT plugin produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT sources produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT docs produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT pom produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT scala-tool produced in /Users/mayuri/Downloads/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (942ms resolve - 30ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1406ms :: artifacts dl 37ms[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT compile produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT runtime produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT test produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT provided produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT optional produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT compile-internal produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT runtime-internal produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT test-internal produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT plugin produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT sources produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT docs produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT pom produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#fb_spark-build-build;0.1-SNAPSHOT scala-tool produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/project/project/target/resolution-cache/reports/default-fb_spark-build-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1406ms resolve - 37ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

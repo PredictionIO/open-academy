@@ -36,6 +36,7 @@ object DataProcessing extends App {
     })
     .toDF
     .dropDuplicates(Seq("userId"))
+    usersDF.describe("time").show()
 
     case class UsersAds(
       userId: String,
@@ -60,7 +61,5 @@ object DataProcessing extends App {
       })
       .toDF
       .dropDuplicates(Seq("userId"))
-
-      usersDF.join(usersAds, "userId").show()
 
 }
