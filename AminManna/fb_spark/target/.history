@@ -1,0 +1,12 @@
+compile
+run
+assembly
+run
+clean compile
+clean
+compile
+assemblyPackageDependency
+run
+assembly
+clean
+assembly

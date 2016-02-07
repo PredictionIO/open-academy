@@ -1,0 +1,3 @@
+2016-02-06 15:13:35,463 INFO  io.prediction.tools.console.App$ [main] -                 Name |   ID |                                                       Access Key | Allowed Event(s)
+2016-02-06 15:13:35,496 INFO  io.prediction.tools.console.App$ [main] -               MyApp1 |    1 | 4xhcZcjzx6EyBz53Mwztv0t38fu9czmCilUsWZ1WaIsTwr86sOOBlV8Oi8m9qp65 | (all)
+2016-02-06 15:13:35,496 INFO  io.prediction.tools.console.App$ [main] - Finished listing 1 app(s).
