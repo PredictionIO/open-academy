@@ -1,9 +1,10 @@
 package dataAnalysis
+
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.SQLContext
+import org.apache.spark.sql.{Row, DataFrame, SQLContext}
 import org.joda.time.DateTime
+import org.apache.spark.sql.functions._
 
 /**
   * Created by williamxue on 2/7/16.
@@ -16,6 +17,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   // Initialize tables
   protected val usersTable: DataFrame = loadUsersTable()
   protected val usersAdsTable: DataFrame = loadUsersAdsTable()
+  protected val itemsTable: DataFrame = loadItemsTable()
   protected val combinedTable: DataFrame = usersTable.join(usersAdsTable, "userId")
 
 
@@ -71,12 +73,52 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     usersAds
   }
 
+  private def loadItemsTable() : DataFrame = {
+
+    val items: DataFrame = sparkContext
+      .textFile(dataPath + "items.csv", 750)
+      .map(line => {
+        val fields = line.split(",")
+
+        val itemId: Long = fields(0).toLong
+        val style: String = fields(1)
+        val personality: String = fields(2)
+        val color: String = fields(3)
+        val theme: String = fields(4)
+        val price: Double = fields(5).toDouble
+        val category: String = fields(6)
+
+        DataAnalyzer.Items(itemId, style, personality, color, theme, price, category)
+      })
+      .toDF
+      .dropDuplicates(Seq("itemId"))
+
+    // return the DataFrame with item information
+    items
+  }
+
+  def showItemsTable() = {
+    itemsTable.show
+  }
+
   def showCombinedTable() = {
     combinedTable.show
   }
 
   def countUsers : Long = {
     usersTable.count
+  }
+
+  def findHighestPrice: Double = {
+    itemsTable.select(max("price")).head().getAs[Double]("max(price)")
+  }
+
+  def findLowestPrice: Double = {
+    itemsTable.select(min("price")).head().getAs[Double]("min(price)")
+  }
+
+  def findAveragePrice: Double = {
+    itemsTable.select(avg("price")).head().getAs[Double]("avg(price)")
   }
 
 }
@@ -96,5 +138,15 @@ object DataAnalyzer {
                        utmTerm: String,
                        utmContent: String)
     extends Serializable
+
+  case class Items(
+                    itemId: Long,
+                    style: String,
+                    personality: String,
+                    color: String,
+                    theme: String,
+                    price: Double,
+                    category: String
+                  )
 }
 

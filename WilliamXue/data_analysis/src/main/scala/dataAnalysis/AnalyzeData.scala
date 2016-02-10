@@ -14,5 +14,9 @@ object AnalyzeData extends App {
 
   val analyzer: DataAnalyzer = new DataAnalyzer(sparkConf, DATAPATH)
   analyzer.showCombinedTable()
+  analyzer.showItemsTable()
   println(analyzer.countUsers)
+  println(analyzer.findHighestPrice)
+  println(analyzer.findLowestPrice)
+  println(analyzer.findAveragePrice)
 }
