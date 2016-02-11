@@ -2,7 +2,7 @@ package dataAnalysis
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.{Row, DataFrame, SQLContext}
+import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.joda.time.DateTime
 import org.apache.spark.sql.functions._
 
@@ -18,6 +18,8 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   protected val usersTable: DataFrame = loadUsersTable()
   protected val usersAdsTable: DataFrame = loadUsersAdsTable()
   protected val itemsTable: DataFrame = loadItemsTable()
+  protected val conversionsTable: DataFrame = loadConversionsTable()
+  protected val viewsTable: DataFrame = loadViewsTable()
   protected val combinedTable: DataFrame = usersTable.join(usersAdsTable, "userId")
 
 
@@ -97,6 +99,58 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     items
   }
 
+  private def loadConversionsTable() : DataFrame = {
+
+    val conversions: DataFrame = sparkContext
+      .textFile(dataPath + "conversions.csv", 750)
+      .map(line => {
+        val fields = line.split(",")
+
+        val userId: String = fields(0)
+        val itemId: String = fields(1)
+        val price: Double = fields(2).toDouble
+        val quantity: Int = fields(3).toInt
+        val timestamp: Double = DateTime
+          .parse(fields(4))
+          .getMillis
+          .toDouble / 1000
+
+        DataAnalyzer.Conversions(userId, itemId, price, quantity, timestamp)
+      })
+      .toDF
+
+    // return DataFrame with conversions (purchase) information
+    conversions
+  }
+
+  private def loadViewsTable() : DataFrame = {
+    val ValidPageTypes: List[String] = List("Product", "Collection")
+
+    val views: DataFrame = sparkContext
+      .textFile(dataPath + "views.csv", 750)
+      .map(line => {
+        val fields = line.split(",")
+
+        val userId: String = fields(0)
+        val itemId: String = fields(1)
+        val timestamp: Double = DateTime
+          .parse(fields(3))
+          .getMillis
+          .toDouble / 1000
+        val pagetype = fields(4)
+
+        DataAnalyzer.Views(userId, itemId, timestamp, pagetype)
+      })
+      .toDF
+      .filter($"pagetype".isin(ValidPageTypes:_*))
+
+    // return DataFrame with views information
+    views
+  }
+
+
+  // Methods to show tables.
+
   def showItemsTable() = {
     itemsTable.show
   }
@@ -108,6 +162,9 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   def countUsers : Long = {
     usersTable.count
   }
+
+  // Methods to get various information about the data.
+  // Useful for answering the quiz.
 
   def findHighestPrice: Double = {
     itemsTable.select(max("price")).first().getAs[Double]("max(price)")
@@ -121,24 +178,27 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     itemsTable.select(avg("price")).first().getAs[Double]("avg(price)")
   }
 
+  def findAveragePriceBought: Double = {
+    conversionsTable.select(avg("price")).first().getAs[Double]("avg(price)")
+  }
+
   def findEarliestSignUpDate: String = {
     val earliestSignUpMillis: Long = (1000 * usersTable.select(min("time")).first().getAs[Double]("min(time)")).toLong
-    // val earliestSignUpDateTime: DateTime = new DateTime(earliestSignUpMillis)
     Common.timeFormatter.print(earliestSignUpMillis)
   }
 
   def findLatestSignUpDate: String = {
     val latestSignUpMillis: Long = (1000 * usersTable.select(max("time")).first().getAs[Double]("max(time)")).toLong
-    // val latestSignUpDateTime: DateTime = new DateTime(latestSignUpMillis)
     Common.timeFormatter.print(latestSignUpMillis)
   }
 
 }
 
 object DataAnalyzer {
+
   case class Users(
                     userId: String,
-                    time: Double,
+                    signupTime: Double,
                     registerCountry: String)
     extends Serializable
 
@@ -148,7 +208,8 @@ object DataAnalyzer {
                        utmCampaign: String,
                        utmMedium: String,
                        utmTerm: String,
-                       utmContent: String)
+                       utmContent: String
+                     )
     extends Serializable
 
   case class Items(
@@ -158,7 +219,23 @@ object DataAnalyzer {
                     color: String,
                     theme: String,
                     price: Double,
-                    category: String
-                  )
+                    category: String)
+  extends Serializable
+
+  case class Conversions(
+                          userId: String,
+                          itemId: String,
+                          price: Double,
+                          quantity: Int,
+                          timestamp: Double)
+  extends Serializable
+
+  case class Views(
+                    userId: String,
+                    itemId: String,
+                    timestamp: Double,
+                    pagetype: String)
+  extends Serializable
+
 }
 
