@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b322571-3e28-4674-9498-f629b2be1ce1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/dataAnalysis/AnalyzeData.scala" afterPath="$PROJECT_DIR$/src/main/scala/dataAnalysis/AnalyzeData.scala" />
-    </list>
+    <list default="true" id="3b322571-3e28-4674-9498-f629b2be1ce1" name="Default" comment="" />
     <ignored path="data_analysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,8 +43,8 @@
       <file leaf-file-name="DataAnalyzer.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/dataAnalysis/DataAnalyzer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6605114">
-              <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.3622159">
+              <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
               <folding>
                 <element signature="e#22#55#0" expanded="true" />
               </folding>
@@ -1098,8 +1096,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataAnalysis/DataAnalyzer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6605114">
-          <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.3622159">
+          <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
           <folding>
             <element signature="e#22#55#0" expanded="true" />
           </folding>

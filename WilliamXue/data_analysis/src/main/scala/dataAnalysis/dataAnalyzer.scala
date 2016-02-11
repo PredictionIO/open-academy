@@ -148,6 +148,11 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     views
   }
 
+  // TODO: Finish this!
+  private def getUserPurchaseTableFirstThirty() : DataFrame = {
+    combinedTable.join(usersAdsTable, "userId")
+  }
+
 
   // Methods to show tables.
 
