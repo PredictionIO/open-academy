@@ -110,15 +110,27 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   }
 
   def findHighestPrice: Double = {
-    itemsTable.select(max("price")).head().getAs[Double]("max(price)")
+    itemsTable.select(max("price")).first().getAs[Double]("max(price)")
   }
 
   def findLowestPrice: Double = {
-    itemsTable.select(min("price")).head().getAs[Double]("min(price)")
+    itemsTable.select(min("price")).first().getAs[Double]("min(price)")
   }
 
   def findAveragePrice: Double = {
-    itemsTable.select(avg("price")).head().getAs[Double]("avg(price)")
+    itemsTable.select(avg("price")).first().getAs[Double]("avg(price)")
+  }
+
+  def findEarliestSignUpDate: String = {
+    val earliestSignUpMillis: Long = (1000 * usersTable.select(min("time")).first().getAs[Double]("min(time)")).toLong
+    // val earliestSignUpDateTime: DateTime = new DateTime(earliestSignUpMillis)
+    Common.timeFormatter.print(earliestSignUpMillis)
+  }
+
+  def findLatestSignUpDate: String = {
+    val latestSignUpMillis: Long = (1000 * usersTable.select(max("time")).first().getAs[Double]("max(time)")).toLong
+    // val latestSignUpDateTime: DateTime = new DateTime(latestSignUpMillis)
+    Common.timeFormatter.print(latestSignUpMillis)
   }
 
 }
