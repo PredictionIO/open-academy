@@ -1,0 +1,59 @@
+[0m[[0minfo[0m] [0mPackaging /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/data_analysis_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$UsersAds$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$UsersAds$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Views.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Views.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/Common$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/Common$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/Common.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/Common.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator6$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator6$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator4$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator4$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Items$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Items$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator8$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator8$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Users.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Users.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Users$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Users$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator10$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator10$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Items.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Items.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$UsersAds.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$UsersAds.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/AnalyzeData$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/AnalyzeData$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Views$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Views$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Conversions$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Conversions$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/AnalyzeData$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/AnalyzeData$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/AnalyzeData.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/AnalyzeData.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Conversions.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Conversions.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

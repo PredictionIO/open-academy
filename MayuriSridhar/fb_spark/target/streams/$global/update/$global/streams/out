@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/mayuri/Downloads/fb_spark/}fb_spark...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/}fb_spark...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: fbspark#fbspark_2.10;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for fbspark#fbspark_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies fbspark#fbspark_2.10;1.0->org.scala-lang#scala-library;2.10.5 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.5 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@601592f7[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cccada2[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.5[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.5] org.scala-lang#scala-library;2.10.5[0m
@@ -895,7 +895,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0!hadoop-mapreduce-client-app.pom(pom.original) (304ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0!hadoop-mapreduce-client-app.pom(pom.original) (449ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0[0m
@@ -955,7 +955,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (261ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0!hadoop-mapreduce-client-common.pom(pom.original) (257ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0[0m
@@ -1018,7 +1018,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (352ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;2.2.0!hadoop-yarn-common.pom(pom.original) (248ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-yarn;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0[0m
@@ -1097,7 +1097,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (766ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;2.2.0!hadoop-yarn-api.pom(pom.original) (248ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-yarn;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0[0m
@@ -2535,7 +2535,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-client;2.2.0!hadoop-yarn-client.pom(pom.original) (675ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-client;2.2.0!hadoop-yarn-client.pom(pom.original) (259ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-yarn;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn;2.2.0[0m
@@ -2652,7 +2652,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0!hadoop-mapreduce-client-core.pom(pom.original) (248ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0!hadoop-mapreduce-client-core.pom(pom.original) (244ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0[0m
@@ -2739,7 +2739,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-common;2.2.0!hadoop-yarn-server-common.pom(pom.original) (278ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-common;2.2.0!hadoop-yarn-server-common.pom(pom.original) (243ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-yarn-server;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn-server;2.2.0 {}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-yarn-server;2.2.0 ...[0m
@@ -2872,7 +2872,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (243ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0!hadoop-mapreduce-client-shuffle.pom(pom.original) (246ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0[0m
@@ -2935,7 +2935,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.2.0/hadoop-mapreduce-client-jobclient-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0!hadoop-mapreduce-client-jobclient.pom(pom.original) (305ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0!hadoop-mapreduce-client-jobclient.pom(pom.original) (247ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-mapreduce-client;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-mapreduce-client;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client;2.2.0[0m
@@ -3370,7 +3370,7 @@
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom[0m
 [0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/apache/hadoop/hadoop-yarn-server-nodemanager/2.2.0/hadoop-yarn-server-nodemanager-2.2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (241ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0!hadoop-yarn-server-nodemanager.pom(pom.original) (246ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-yarn-server;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-yarn-server;2.2.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server;2.2.0[0m
@@ -14475,19 +14475,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.5!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.5!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 12028ms :: artifacts dl 66ms[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 compile produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 runtime produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 test produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 provided produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 optional produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 compile-internal produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 runtime-internal produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 test-internal produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 plugin produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 sources produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 docs produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 pom produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 scala-tool produced in /Users/mayuri/Downloads/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (12028ms resolve - 66ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10747ms :: artifacts dl 74ms[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 compile produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 runtime produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 test produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 provided produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 optional produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 compile-internal produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 runtime-internal produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 test-internal produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 plugin produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 sources produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 docs produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 pom produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for fbspark#fbspark_2.10;1.0 scala-tool produced in /Users/mayuri/Desktop/open-academy/MayuriSridhar/fb_spark/target/resolution-cache/reports/fbspark-fbspark_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (10747ms resolve - 74ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

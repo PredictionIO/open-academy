@@ -4,7 +4,7 @@
 		module="fb_spark-build-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160207133914"
+		publication="20160207164927"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
