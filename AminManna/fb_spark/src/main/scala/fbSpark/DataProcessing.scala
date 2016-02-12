@@ -16,7 +16,7 @@ object DataProcessing extends App {
 
   case class Users(
     userId: String,
-    time: String,
+    time: Double,
     registerCountry: String)
     extends Serializable
 
@@ -28,16 +28,15 @@ object DataProcessing extends App {
 
       val userId: String = fields(0)
       val timestamp: String = fields(numFields - 1)
-//      val milliTime: Double = Common
-//        .timeFormatter
-//        .parseDateTime(timestamp)
-//        .getMillis
-//        .toDouble / 1000
+      val milliTime: Double = DateTime
+        .parse(timestamp)
+        .getMillis
+        .toDouble / 1000
       val registerCountry: String = fields
         .slice(1, numFields - 1)
         .mkString(",")
 
-      Users(userId, timestamp, registerCountry)
+      Users(userId, milliTime, registerCountry)
     })
     .toDF
     .dropDuplicates(Seq("userId"))
