@@ -1,1 +1,35 @@
-[0m[[0mdebug[0m] [0mJar uptodate: /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/fbspark_2.10-1.0.jar[0m
+[0m[[0minfo[0m] [0mPackaging /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/fbspark_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$Conversion.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$Conversion.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$$typecreator2$1.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/Common$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/Common$.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/Run.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/Run.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/Run$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/Run$.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$Users.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$Users.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$Conversion$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$Conversion$.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/DataProcessing$Users$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/DataProcessing$Users$.class[0m
+[0m[[0mdebug[0m] [0m	fbSpark/Common.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/amin/Dropbox (MIT)/Junior/Spring/6.s194/open-academy/AminManna/fb_spark/target/scala-2.10/classes/fbSpark/Common.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
