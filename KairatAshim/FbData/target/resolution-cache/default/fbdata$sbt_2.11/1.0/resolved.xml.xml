@@ -4,7 +4,7 @@
 		module="fbdata$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160213200650"
+		publication="20160217160913"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/kairat/FbData/project/}fbdata-build...
+[info] Updating {file:/Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/}fbdata-build...
 [debug] :: resolving dependencies :: default#fbdata-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -2653,19 +2653,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 5850ms :: artifacts dl 69ms
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT compile produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-compile.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT runtime produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-runtime.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT test produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-test.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT provided produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-provided.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT optional produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-optional.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT compile-internal produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-compile-internal.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT runtime-internal produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-runtime-internal.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT test-internal produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-test-internal.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT plugin produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-plugin.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT sources produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-sources.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT docs produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-docs.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT pom produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-pom.xml
-[debug] 	report for default#fbdata-build;0.1-SNAPSHOT scala-tool produced in /Users/kairat/FbData/project/target/resolution-cache/reports/default-fbdata-build-scala-tool.xml
-[debug] 	resolve done (5850ms resolve - 69ms download)
+[debug] :: resolution report :: resolve 8267ms :: artifacts dl 197ms
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT compile produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-compile.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT runtime produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-runtime.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT test produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-test.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT provided produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-provided.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT optional produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-optional.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT compile-internal produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-compile-internal.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT runtime-internal produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-runtime-internal.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT test-internal produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-test-internal.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT plugin produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-plugin.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT sources produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-sources.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT docs produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-docs.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT pom produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-pom.xml
+[debug] 	report for default#fbdata-build;0.1-SNAPSHOT scala-tool produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/project/target/resolution-cache/reports/default-fbdata-build-scala-tool.xml
+[debug] 	resolve done (8267ms resolve - 197ms download)
 [info] Done updating.

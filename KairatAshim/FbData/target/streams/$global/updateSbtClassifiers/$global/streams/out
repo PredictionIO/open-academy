@@ -1101,9 +1101,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.jboss.interceptor#jboss-interceptor-api;1.1!jboss-interceptor-api.jar
-[debug] :: resolution report :: resolve 1715ms :: artifacts dl 90ms
-[debug] 	report for default#fbdata$sbt_2.11;1.0 default produced in /Users/kairat/FbData/target/resolution-cache/reports/default-fbdata$sbt_2.11-default.xml
-[debug] 	resolve done (1715ms resolve - 90ms download)
+[debug] :: resolution report :: resolve 1086ms :: artifacts dl 50ms
+[debug] 	report for default#fbdata$sbt_2.11;1.0 default produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/target/resolution-cache/reports/default-fbdata$sbt_2.11-default.xml
+[debug] 	resolve done (1086ms resolve - 50ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#fbdata$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1645,6 +1645,6 @@
 [debug] 	[NOT REQUIRED] org.eclipse.sisu#org.eclipse.sisu.inject;0.3.0!org.eclipse.sisu.inject.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.plexus#plexus-component-annotations;1.5.5!plexus-component-annotations.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.plexus#plexus-classworlds;2.5.2!plexus-classworlds.jar(src)
-[debug] :: resolution report :: resolve 435ms :: artifacts dl 72ms
-[debug] 	report for default#fbdata$sources_2.11;1.0 default produced in /Users/kairat/FbData/target/resolution-cache/reports/default-fbdata$sources_2.11-default.xml
-[debug] 	resolve done (435ms resolve - 72ms download)
+[debug] :: resolution report :: resolve 266ms :: artifacts dl 232ms
+[debug] 	report for default#fbdata$sources_2.11;1.0 default produced in /Users/kairat/Desktop/PredictionIO/KairatAshim/FbData/target/resolution-cache/reports/default-fbdata$sources_2.11-default.xml
+[debug] 	resolve done (266ms resolve - 232ms download)

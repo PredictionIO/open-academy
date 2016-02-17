@@ -2,17 +2,16 @@ package FbData
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.SQLContext
 
-object Run extends App {
+object DataProcessing extends App {
 
-  val sparkConf: SparkConf = Common.getSparkConf("FB_Data")
+  val sparkConf: SparkConf = Common.getSparkConf("DATA_PROCESSING");
   val sparkContext: SparkContext = new SparkContext(sparkConf)
   val sqlContext: SQLContext = new SQLContext(sparkContext);
 
-  sqlContext
-    .read
-    .parquet()
-    .show()
+  sparkContext
+    .textFile("/Users/kairat/Downloads/fb/users.csv")
+    .take(20)
+    .foreach(println)
 }

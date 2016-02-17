@@ -4,7 +4,7 @@
 		module="fbdata$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160213200653"
+		publication="20160217160922"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -455,9 +455,6 @@
 		</dependency>
 		<dependency org="com.sun.xml.fastinfoset" name="FastInfoset" rev="1.2.12" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="FastInfoset" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="javax.xml.bind" name="jsr173_api" rev="1.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
-			<artifact name="jsr173_api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.apache.commons" name="commons-lang3" rev="3.0" transitive="false" conf="compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="commons-lang3" type="src" ext="jar" conf="sources" e:classifier="sources"/>

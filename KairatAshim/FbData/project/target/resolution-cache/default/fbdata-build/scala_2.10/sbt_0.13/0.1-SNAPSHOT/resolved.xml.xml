@@ -4,7 +4,7 @@
 		module="fbdata-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160213200109"
+		publication="20160217160824"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
