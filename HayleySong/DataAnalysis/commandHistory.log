@@ -1,0 +1,75 @@
+Log of commnads for answering the basic questions
+var usersDF = sqlContext.parquetFile("users.parquet")
+usersDF.distinct.count
+
+
+items.select(avg("price")).show
+
+//Renaming a column: user df.withColumnRenamed("oldname", "newname")
+users = users.withColumnRenamed("time", "t_signup")
+ orders = orders.withColumnRenamed("time", "t_order")
+ 
+ //t_diff column
+ var t_diff:Column = users("t_order") -  users("t_signup")
+users = users.withColumn("t_diff", t_diff)
+
+//Or in one line
+users = users.withColumn("t_diff", users("t_order")-users("t_signup"))
+
+//Avg price of items bought
+users.select(avg("price")).show
+
+//val thritydays = 30*24*3600 //in seconds
+
+//Get only timeInfo
+var timeInfo = users("userId", "t_diff")
+var t_diff: Column = timeInfo("t_diff") < thritydays
+timeInfo = timeInfo.withColumn("t_bool", t_diff)
+
+//Note there are negative t_diff values
+//For example , check userId = 307401 
+//cat users.csv | grep 307401
+//cat conversions.csv | grep 307401 
+//Notice the order time is earlier than the signup time. What's up with this?
+//We can use filter function to get all of them
+var weirdTimes = users.filter("t_diff <0 ").select("userId", "t_signup", "t_order", "t_diff")
+
+//avg, min, max of their signup times and order times
+weirdTimes.select(avg("t_signup"), min("t_signup"), max("t_signup")).show
+
+weirdTimes.select(avg("t_order"), min("t_order"), max("t_order")).show
+
+//var goodTimes = users.filter("t_diff>0")
+var goodTimes_uniqueId = goodTimes.dropDuplicates(Seq("userId"))
+
+//goodTimes.count // 16675
+//goodTimes_uniqueId.count // 12541
+
+
+// goodTimes.groupBy("userId").count.sort($"count".desc).show
+users.groupBy().agg(sum("quantity"), max("quantity"), min("quantity")).show
+
+users.filter("quantity <= 0").dropDuplicates(Seq("userId")).show
+
+users.filter("quantity <= 0").dropDuplicates(Seq("userId")).count //32 
+//32 usesdata that have quantity of zero 
+
+//Number of unique users who actually bought stuff
+users.filter("quantity > 0").dropDuplicates(Seq("userId")).count
+
+users.filter("0<=t_diff").filter("t_diff<=2592000").dropDuplicates(Seq("userId")).count
+
+//how much spent in the first 30 days?
+users.filter("0<=t_diff").filter("t_diff<=2592000").filter("0<=quantity").groupBy("userId").agg(sum("price")).show
+
+users.filter("0<=t_diff").filter("t_diff<=2592000").filter("0<=quantity").groupBy("userId").agg(sum("price")).filter("5000<=sum(price)").show
+
+var amt:Column = users("price")*users("quantity")
+ users = users.withColumn("amt", amt)
+var thirtyday_users = users.filter("0<=t_diff").filter("t_diff<=2592000")
+ var thirtyday_users_totalAmt = thirtyday_users.groupBy("userId").agg(sum("amt"))
+
+//avg spent of users in thirtydays
+thirtyday_users_totalAmt.select(avg("sum(amt)")).show //138.62
+
+
