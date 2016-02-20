@@ -2,7 +2,7 @@ package dataAnalysis
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.{DataFrame, SQLContext}
+import org.apache.spark.sql.{UserDefinedFunction, DataFrame, SQLContext}
 import org.joda.time.DateTime
 import org.apache.spark.sql.functions._
 import java.util.concurrent.TimeUnit
@@ -14,7 +14,6 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   protected val sparkContext: SparkContext = new SparkContext(sparkConf)
   protected val sqlContext: SQLContext = new SQLContext(sparkContext)
   import sqlContext.implicits._
-//  protected val NumDays = 30
 
   // Initialize tables
   protected val usersTable: DataFrame = loadUsersTable()
@@ -22,8 +21,10 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   protected val itemsTable: DataFrame = loadItemsTable()
   protected val conversionsTable: DataFrame = loadConversionsTable()
   protected val viewsTable: DataFrame = loadViewsTable()
-  // protected val usersPurchasesTable: DataFrame = loadUserPurchaseTable(NumDays)
-  protected val combinedTable: DataFrame = usersTable.join(usersAdsTable, "userId")
+  protected var conversionsWithRevTable: DataFrame = loadConversionsWithRevTable()
+  protected val usersExtendedDataTable: DataFrame = usersTable.join(usersAdsTable, "userId")
+  protected val combinedTable: DataFrame = loadUserRevenuesTable()
+    .dropDuplicates(Seq("userId"))
 
 
   private def loadUsersTable() : DataFrame = {
@@ -148,67 +149,25 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     views
   }
 
-  // TODO: Finish this!
-  /**
-    * Precondition: usersTable and conversionsTable must already be loaded
-    * @param numDays the number of days since the start that we want to look at purchases from
-    * @return a dataframe with information about users purchase histories over a certain amount of days
-    */
-  private def loadUserPurchaseTable(numDays:Int) : DataFrame = {
+  private def loadConversionsWithRevTable() : DataFrame = {
+    val revenueUDF: UserDefinedFunction = udf((price: Double, quantity: Int) => price * quantity)
 
-    val DaysUntilTimeLimit = TimeUnit.DAYS
-      .toMillis(numDays)
-      .toDouble / 1000
+    val conversionsWithRev: DataFrame = conversionsTable.withColumn("revenue", revenueUDF($"price", $"quantity"))
 
-    val StartTime = usersTable
-      .select(min("signupTime"))
-      .first()
-      .getAs[Double]("min(signupTime)")
+    conversionsWithRev
+  }
 
-    val TimeLimit = StartTime + DaysUntilTimeLimit
 
-    println("Timelimit " + TimeLimit)
+  private def loadUserRevenuesTable(): DataFrame = {
+    val userSpentTable: DataFrame = conversionsWithRevTable.groupBy($"userId")
+      .agg(sum("revenue"))
+      .withColumnRenamed("sum(revenue)", "revenue")
 
-    val conversionsBeforeTimeLimitTable = conversionsTable.filter($"timestamp" < TimeLimit)
+    userSpentTable.withColumnRenamed("userId", "userIdRev")
 
-    conversionsBeforeTimeLimitTable.show
-
-    val addPurchaseMadeColumn = udf((userId: String) => {
-      println("udfStart")
-      !(conversionsBeforeTimeLimitTable.filter($"userId" === userId).count() == 0)
-    })
-
-    val addAmountSpent = udf((userId:String) => {
-      val thisUsersPurchases: DataFrame = conversionsBeforeTimeLimitTable
-        .filter($"purchaseMade" === true && $"userId" === userId)
-
-      val thisUsersPurchasedItemPrices: List[String] = thisUsersPurchases
-        .select("price")
-        .rdd.map(r => r(0).asInstanceOf[String])
-        .collect()
-        .toList
-
-      val thisUsersPurchasedItemQuantities: List[String] = thisUsersPurchases
-        .select("quantity")
-        .rdd.map(r => r(0).asInstanceOf[String])
-        .collect()
-        .toList
-
-      val thisUsersAmountSpent: Double = thisUsersPurchasedItemPrices
-        .zip(thisUsersPurchasedItemQuantities)
-        .map((entry: (String, String)) => {entry._1.toDouble * entry._2.toInt})
-        .sum
-
-      thisUsersAmountSpent
-    })
-
-    val userPurchasesTable = usersTable
-      .withColumn("purchaseMade", addPurchaseMadeColumn(col("userId")))
-      .withColumn("amountSpent", addAmountSpent(col("userId")))
-      .filter($"purchaseMade" === true)
-      .dropDuplicates(Seq("userId"))
-
-    userPurchasesTable.printSchema
+    val userPurchasesTable: DataFrame = usersExtendedDataTable
+      .join(userSpentTable, usersExtendedDataTable("userId") === userSpentTable("userIdRev"), "left_outer")
+      .drop("userIdRev")
 
     userPurchasesTable
   }
@@ -224,16 +183,17 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     combinedTable.show
   }
 
-//  def showUsersPurchasesTable() = {
-//    usersPurchasesTable.show
-//  }
-
-  def countUsers : Long = {
-    usersTable.count
-  }
-
   // Methods to get various information about the data.
   // Useful for answering the quiz.
+
+  def countUsers : Long = {
+    combinedTable.count
+  }
+
+  def countUsersOverPrice(price: Double): Long = {
+    usersExtendedDataTable.filter($"revenue" > price)
+      .count
+  }
 
   def findHighestPrice: Double = {
     itemsTable.select(max("price"))
@@ -265,7 +225,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     val DaysUntilTimeLimit: Long = TimeUnit.DAYS
       .toMillis(numDays)
 
-    val StartTime = usersTable
+    val StartTime = combinedTable
       .select(min("signupTime"))
       .first()
       .getAs[Long]("min(signupTime)")
@@ -279,61 +239,28 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
       .count
   }
 
-  def countUsersOverPriceTimeLimit(numDays: Int, price: Double): Long = {
+  def countUsersItemBoughtAbovePrice(numDays: Int, price: Double): Long = {
     val DaysUntilTimeLimit: Long = TimeUnit.DAYS
-      .toMillis(numDays)
+    .toMillis(numDays)
 
-    val StartTime = usersTable
-      .select(min("signupTime"))
-      .first()
-      .getAs[Long]("min(signupTime)")
+    val StartTime = combinedTable
+    .select(min("signupTime"))
+    .first()
+    .getAs[Long]("min(signupTime)")
 
     val TimeLimit = StartTime + DaysUntilTimeLimit
 
     val conversionsBeforeTimeLimitTable = conversionsTable.filter($"timestamp" < TimeLimit)
 
-    val userIds: List[String] = conversionsBeforeTimeLimitTable
-      .dropDuplicates(Seq("userId"))
-      .select("userId")
-      .rdd.map(r => r(0).asInstanceOf[String])
-      .collect()
-      .toList
+    val revenueUDF: UserDefinedFunction = udf((price: Double, quantity: Int) => price * quantity)
 
-    var count: Int = 0
+    val conversionsWithRevTimeLimit: DataFrame = conversionsBeforeTimeLimitTable.withColumn("revenue", revenueUDF($"price", $"quantity"))
 
-    conversionsBeforeTimeLimitTable.show
+    val userRevenueBeforeTimeLimitTable: DataFrame = conversionsWithRevTimeLimit.groupBy($"userId")
+      .agg(sum("revenue"))
+      .withColumnRenamed("sum(revenue)", "revenue")
 
-    for (userId: String <- userIds) {
-//      println(getAmountSpentThisUser(userId, conversionsBeforeTimeLimitTable))
-      if (getAmountSpentThisUser(userId, conversionsBeforeTimeLimitTable) > price)
-        count += 1
-    }
-
-    count
-  }
-
-  private def getAmountSpentThisUser(userId: String, conversionsBeforeTimeLimitTable: DataFrame): Double = {
-    val thisUsersPurchases: DataFrame = conversionsBeforeTimeLimitTable
-      .filter($"userId" === userId)
-
-    val thisUsersPurchasedItemPrices: List[Double] = thisUsersPurchases
-      .select("price")
-      .rdd.map(r => r(0).asInstanceOf[Double])
-      .collect()
-      .toList
-
-    val thisUsersPurchasedItemQuantities: List[Int] = thisUsersPurchases
-      .select("quantity")
-      .rdd.map(r => r(0).asInstanceOf[Int])
-      .collect()
-      .toList
-
-    val thisUsersAmountSpent: Double = thisUsersPurchasedItemPrices
-      .zip(thisUsersPurchasedItemQuantities)
-      .map((entry: (Double, Int)) => {entry._1 * entry._2})
-      .sum
-
-    thisUsersAmountSpent
+    userRevenueBeforeTimeLimitTable.count
   }
 
   def findEarliestSignUpDate: String = {
