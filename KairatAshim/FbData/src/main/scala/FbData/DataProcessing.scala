@@ -70,7 +70,7 @@ class DataProcessing(val filesPath: String) {
 
   def setItemsDF() : DataFrame = {
     val itemsDF : DataFrame = sparkContext
-      .textFile(filesPath + "item.csv", 750)
+      .textFile(filesPath + "items.csv", 750)
       .map(line => {
         val fields : Array[String] = line.split(",")
 
@@ -100,9 +100,8 @@ class DataProcessing(val filesPath: String) {
         val itemId : String  = fields(1)
         val price : Double = fields(2).toDouble
         val quantity : Int = fields(3).toInt
-        val timestamp : Long = Common
-          .timeFormatter
-          .parseDateTime(fields(4))
+        val timestamp : Long = DateTime
+          .parse(fields(4))
           .getMillis
 
         Conversion(userId, itemId, price, quantity, timestamp)
@@ -115,15 +114,14 @@ class DataProcessing(val filesPath: String) {
     val pageTypes: List[String] = List("Product", "Collection")
 
     sparkContext
-      .textFile(filesPath + "view.csv")
+      .textFile(filesPath + "views.csv")
       .map(line => {
         val fields : Array[String] = line.split(",")
 
         val userId : String = fields(0)
         val itemId : String = fields(1)
-        val timestamp : Long = Common
-          .timeFormatter
-          .parseDateTime(fields(2))
+        val timestamp : Long = DateTime
+          .parse(fields(2))
           .getMillis
 
         val pagetype : String = fields(3)
@@ -137,35 +135,87 @@ class DataProcessing(val filesPath: String) {
 
   ////////// METHODS for getting answers for quiz questions //////////
   def totalNumberOfUsers() : Long = {
-    //usersDF.show()
-    //println(usersDF.first())
     return usersDF.count
   }
 
-  def mostExpensiveItemPrice() : Any = {
-    itemsDF.show()
-    return "Kairat"
+  def mostExpensiveItemPrice() : Double = {
+    itemsDF.agg(max(itemsDF.col("price")))
+      .first()
+      .get(0)
+      .toString
+      .toDouble
   }
 
-  /*
+
   def cheapestItemPrice() : Double = {
-    itemsDF.select(min("price"))
+    itemsDF
+      .agg(min(itemsDF.col("price")))
       .first()
-      .getAs[Double]("min(price)")
+      .get(0)
+      .toString
+      .toDouble
   }
 
   def averageItemPrice() : Double = {
-    itemsDF.select(avg("price"))
+    itemsDF
+      .agg(avg(itemsDF.col("price")))
       .first()
-      .getAs[Double]("avg(price)")
+      .get(0)
+      .toString
+      .toDouble
   }
 
   def averageBoughtItemPrice() : Double = {
     conversionsDF
-      .select(avg("price"))
+      .agg(avg(conversionsDF.col("price")))
       .first()
-      .getAs[Double]("avg(price)")
+      .get(0)
+      .toString
+      .toDouble
   }
-  */
+
+  def purchaseInFirst30Days() : Long = {
+    usersDF.join(conversionsDF, usersDF("userId") === conversionsDF("userId"))
+      .filter(($"signupTime" - $"timestamp") <= 30)
+        .filter($"price" > 5000)
+      //.dropDuplicates(Seq("userId"))
+      .count()
+  }
+
+  def purchaseInFirst30DaysSpentMoreThan5000() : Long = {
+    usersDF.join(conversionsDF, usersDF("userId") === conversionsDF("userId"))
+      .filter(($"signupTime" - $"timestamp") <= 30)
+      .filter($"price" > 5000)
+      //.dropDuplicates(Seq("userId"))
+      .count()
+  }
+
+  def earliestSignUpDate() : Any = {
+    val instant = usersDF
+      .agg(min(usersDF.col("signupTime")))
+      .first()
+      .get(0)
+      .toString
+      .toLong
+
+    val dt : DateTime = new DateTime(instant)
+
+    dt.toDate
+  }
+
+  def latestSignUpDate() : Any = {
+    val instant = usersDF
+      .agg(max(usersDF.col("signupTime")))
+      .first()
+      .get(0)
+      .toString
+      .toLong
+
+    val dt : DateTime = new DateTime(instant)
+
+    dt.toDate
+  }
+
+
 }
 

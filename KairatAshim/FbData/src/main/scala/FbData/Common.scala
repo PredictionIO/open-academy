@@ -30,4 +30,13 @@ object Common{
     Thread.sleep(1000)
   }
 
+  def customPrint(a : String, b : Any): Unit = {
+    println()
+    println("----------")
+    println(a)
+    println(b)
+    println("----------")
+    println()
+  }
+
 }

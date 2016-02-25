@@ -4,7 +4,7 @@ object CaseClasses {
 
   case class User(
                     userId : String,
-                    time : Long,
+                    signupTime : Long,
                     registerCountry : String
                   ) extends Serializable
 
