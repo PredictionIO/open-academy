@@ -7,7 +7,6 @@ object Main extends App {
   val dataProcessor : DataProcessing = new DataProcessing(filesPath)
 
   println(dataProcessor.totalNumberOfUsers())
-  //println(dataProcessor.helperMethod().show())
   println(dataProcessor.mostExpensiveItemPrice())
   //println(dataProcessor.cheapestItemPrice())
   //println(dataProcessor.averageItemPrice())

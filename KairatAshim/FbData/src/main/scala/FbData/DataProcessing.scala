@@ -136,24 +136,22 @@ class DataProcessing(val filesPath: String) {
 
 
   ////////// METHODS for getting answers for quiz questions //////////
-
   def totalNumberOfUsers() : Long = {
-    usersDF.count
+    //usersDF.show()
+    //println(usersDF.first())
+    return usersDF.count
   }
 
   def mostExpensiveItemPrice() : Any = {
-    max(itemsDF("price"))
+    itemsDF.show()
+    return "Kairat"
   }
 
-  def helperMethod() : DataFrame = {
-    val itemsDF1 : DataFrame = setItemsDF()
-    return itemsDF1.describe("price")
-  }
-
+  /*
   def cheapestItemPrice() : Double = {
     itemsDF.select(min("price"))
       .first()
-      .getAs[Double]("max(price)")
+      .getAs[Double]("min(price)")
   }
 
   def averageItemPrice() : Double = {
@@ -168,7 +166,6 @@ class DataProcessing(val filesPath: String) {
       .first()
       .getAs[Double]("avg(price)")
   }
-
-
+  */
 }
 
