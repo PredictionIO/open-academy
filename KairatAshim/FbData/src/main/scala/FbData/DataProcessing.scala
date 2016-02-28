@@ -111,8 +111,6 @@ class DataProcessing(val filesPath: String) {
 
   def setViewsDF() : DataFrame = {
 
-    val pageTypes: List[String] = List("Product", "Collection")
-
     sparkContext
       .textFile(filesPath + "views.csv")
       .map(line => {
@@ -129,7 +127,7 @@ class DataProcessing(val filesPath: String) {
         View(userId, itemId, timestamp, pagetype)
       })
       .toDF
-      .filter($"pagetype" === "product" || $"pagetype" === "collection")
+      .filter($"pagetype" !== "category")
   }
 
 
