@@ -1,2 +1,0 @@
-@author
-Usman Ayyaz
