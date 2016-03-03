@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160210115936"/>
+		date="20160303144816"/>
 	<dependencies>
 		<module organisation="joda-time" name="joda-time">
 			<revision name="2.9.2" status="release" pubdate="20160128084408" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
