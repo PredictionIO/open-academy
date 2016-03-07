@@ -4,7 +4,7 @@
 		module="fbdata$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160217160922"
+		publication="20160220112303"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -26,6 +26,9 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);provided->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
 			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="joda-time" name="joda-time" rev="2.9.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="joda-time" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-core_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>

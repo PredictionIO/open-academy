@@ -1,237 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e89eae-ec11-4c6f-bffe-6d74482a4fd1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$90847a067f67cbf811ce$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$90847a067f67cbf811ce.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$90847a067f67cbf811ce.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$efcc33da72e255fedf68$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$efcc33da72e255fedf68$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$efcc33da72e255fedf68.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$efcc33da72e255fedf68.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$00ae23df625e6f6826f2$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$00ae23df625e6f6826f2$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$00ae23df625e6f6826f2.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$00ae23df625e6f6826f2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$48842588d2cfb7be172f$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$48842588d2cfb7be172f$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$48842588d2cfb7be172f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$48842588d2cfb7be172f.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a7355fa88cddf6cb8c8$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a7355fa88cddf6cb8c8$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a7355fa88cddf6cb8c8.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a7355fa88cddf6cb8c8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$da2b9643acc3b987f158$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$da2b9643acc3b987f158$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$da2b9643acc3b987f158.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$da2b9643acc3b987f158.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f3545c6d92fdb8725738$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f3545c6d92fdb8725738$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f3545c6d92fdb8725738.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f3545c6d92fdb8725738.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/FbData/Run.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/FbData/Run$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/FbData/Run.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$0e272342644b2ddfedd0$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$0e272342644b2ddfedd0$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$0e272342644b2ddfedd0.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$0e272342644b2ddfedd0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$150b3eea4ff3cce0642e$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$150b3eea4ff3cce0642e.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/project/target/config-classes/$150b3eea4ff3cce0642e.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$2cfae6da87267a14571f$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$2cfae6da87267a14571f$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$2cfae6da87267a14571f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$2cfae6da87267a14571f.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$8eaf023d7828c885f1be$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$8eaf023d7828c885f1be$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$8eaf023d7828c885f1be.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$8eaf023d7828c885f1be.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$ad9db55cc33abf5719b8$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$ad9db55cc33abf5719b8$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$ad9db55cc33abf5719b8.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$ad9db55cc33abf5719b8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$cebcefcd761e5da502ab$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$cebcefcd761e5da502ab$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$cebcefcd761e5da502ab.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$cebcefcd761e5da502ab.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$f465408ff0f2961b58c2$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$f465408ff0f2961b58c2$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$f465408ff0f2961b58c2.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/config-classes/$f465408ff0f2961b58c2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/FbData-assembly-1.0-deps.jar" afterPath="$PROJECT_DIR$/target/scala-2.11/FbData-assembly-1.0-deps.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/fbdata_2.11-1.0.jar" afterPath="$PROJECT_DIR$/target/scala-2.11/fbdata_2.11-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/assembly-outputs" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/assembly-outputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/$global/$global/discoveredMainClasses/data" afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/discoveredMainClasses/data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/output" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_avro_avro_1_7_7_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_avro_avro_1_7_7_jar.xml" />
+    <list default="true" id="7685c7ea-7036-4c00-81bd-8cdb03358e07" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/fbdata-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/fbdata-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/fbdata-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/fbdata-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-fbdata-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sbt_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sbt_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sbt_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sbt_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sources_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/fbdata$sources_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/fbdata_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/fbdata_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/fbdata_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/fbdata_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sbt_2.11-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sbt_2.11-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata$sources_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-fbdata_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyPackageDependency/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala" afterPath="$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/data_analysis/data_analysis$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/data_analysis/data_analysis$sources_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/data_analysis/data_analysis$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/data_analysis/data_analysis$sources_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/data_analysis-data_analysis$sources_2.11-test.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/default/data_analysis-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/default/data_analysis-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/default/data_analysis-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/default/data_analysis-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-compile-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-compile.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-docs.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-optional.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-plugin.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-pom.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-provided.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-runtime.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-scala-tool.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-sources.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-test-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-test.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/resolution-cache/reports/default-data_analysis-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/project/target/streams/runtime/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sbt_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sbt_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sbt_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sbt_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sources_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis$sources_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/default/data_analysis_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sbt_2.11-default.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sbt_2.11-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-compile.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-docs.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-optional.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-plugin.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-pom.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-provided.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-runtime.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-sources.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-test.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-compile.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-docs.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-optional.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-plugin.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-pom.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-provided.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-runtime.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-sources.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-test.xml" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/$global/dumpStructure/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/runtime/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/test/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/../../WilliamXue/data_analysis/target/streams/test/managedClasspath/$global/streams/export" />
     </list>
     <ignored path="FbData.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -256,7 +47,20 @@
   <component name="ExternalProjectsManager">
     <system id="SBT">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="data_analysis" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -264,30 +68,7 @@
     <favorites_list name="FbData" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DataProcessing.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34188035">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="e#16#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Common.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Common.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -300,10 +81,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/project/build.properties" />
         <option value="$PROJECT_DIR$/project/assembly.sbt" />
-        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala-2.11/FbData/Common.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/FbData/Common.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/FbData/Run.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/FbData/CaseClasses.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/FbData/Main.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala" />
       </list>
     </option>
@@ -312,6 +96,16 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
@@ -352,10 +146,6 @@
               <option name="myItemId" value="FbData" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -364,38 +154,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala-2.11" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,32 +229,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FbData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config-classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -506,9 +238,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala/FbData" />
+      <recent name="$PROJECT_DIR$/src/main/scala-2.11/FbData" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -995,13 +732,13 @@
     </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1455412068557" />
+    <option name="lastUpdateTimestamp" value="1456633006394" />
     <option name="availableProjects">
       <map>
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="FbData" />
+              <option name="name" value="data_analysis" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
@@ -1035,49 +772,63 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59e89eae-ec11-4c6f-bffe-6d74482a4fd1" name="Default" comment="" />
-      <created>1455411403495</created>
+      <changelist id="7685c7ea-7036-4c00-81bd-8cdb03358e07" name="Default" comment="" />
+      <created>1455824449070</created>
       <option name="number" value="Default" />
-      <updated>1455411403495</updated>
-      <workItem from="1455411404954" duration="3403000" />
-      <workItem from="1455742892558" duration="14000" />
-      <workItem from="1455743252905" duration="3084000" />
+      <updated>1455824449070</updated>
+      <workItem from="1455824475938" duration="4391000" />
+      <workItem from="1455985352268" duration="2382000" />
+      <workItem from="1456249637793" duration="4879000" />
+      <workItem from="1456266351990" duration="106000" />
+      <workItem from="1456283842825" duration="19806000" />
+      <workItem from="1456625105425" duration="199000" />
+      <workItem from="1456632961541" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6501000" />
+    <option name="totallyTimeSpent" value="31857000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1095,25 +846,116 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Common.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/assembly.sbt">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/CaseClasses.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Common.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Common.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21367522">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/CaseClasses.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0089686">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40358743">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Common.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4955157">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/assembly.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033632286">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1121,24 +963,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/Common.scala">
+    <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.4391892">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/FbData/DataProcessing.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34188035">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.6283784">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
-            <element signature="e#16#49#0" expanded="true" />
+            <element signature="e#16#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

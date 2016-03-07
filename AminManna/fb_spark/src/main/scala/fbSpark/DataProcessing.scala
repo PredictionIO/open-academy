@@ -16,6 +16,7 @@ object DataProcessing extends App {
 
   import sqlContext.implicits._
 
+/*
   case class Users(
     userId: String,
     time: Double,
@@ -42,47 +43,55 @@ object DataProcessing extends App {
     })
     .toDF
     .dropDuplicates(Seq("userId"))
+*/
+  //usersDF.write.parquet("users.parquet")
+
+  var usersDF : DataFrame = sqlContext.read.parquet("users.parquet") //Takes 4.5 seconds
 
   println("usersDF:")
   usersDF.show
 
-  // case class UsersAds(
-  //   userId: String,
-  //   utmSource: String,
-  //   utmCampaign: String,
-  //   utmMedium: String,
-  //   utmTerm: String,
-  //   utmContent: String)
+/* UNUSED:
+  case class UsersAds(
+    userId: String,
+    utmSource: String,
+    utmCampaign: String,
+    utmMedium: String,
+    utmTerm: String,
+    utmContent: String)
 
-  // val usersAds: DataFrame = sparkContext
-  //   .textFile("/Users/amin/Desktop/users/fb//users_ads.csv", 750)
-  //   .map(line => {
-  //     val fields = line.split(",")
+  val usersAds: DataFrame = sparkContext
+    .textFile("/Users/amin/Desktop/users/fb//users_ads.csv", 750)
+    .map(line => {
+      val fields = line.split(",")
 
-  //     UsersAds(
-  //       userId = fields(0),
-  //       utmSource = fields(1),
-  //       utmCampaign = fields(2),
-  //       utmMedium = fields(3),
-  //       utmTerm = fields(4),
-  //       utmContent = fields(5))
-  //   })
-  //   .toDF
-  //   .dropDuplicates(Seq("userId"))
+      UsersAds(
+        userId = fields(0),
+        utmSource = fields(1),
+        utmCampaign = fields(2),
+        utmMedium = fields(3),
+        utmTerm = fields(4),
+        utmContent = fields(5))
+    })
+    .toDF
+    .dropDuplicates(Seq("userId"))
 
-  // println("usersAds:")
-  // usersAds.show
+  println("usersAds:")
+  usersAds.show
 
-  // val usersWithAds: DataFrame = usersDF.join(usersAds, "userId")
+  val usersWithAds: DataFrame = usersDF.join(usersAds, "userId")
   
-  // println("usersWithAds:")
-  // usersWithAds.show
+  println("usersWithAds:")
+  usersWithAds.show
+*/
 
+/*
   case class Conversion(
     userId: String,
     itemId: String,
     price: String,
-    conversionTime: Double)
+    conversionTime: Double,
+    quantity: Double)
 
   val conversionDF: DataFrame = sparkContext
     .textFile("/Users/amin/Desktop/users/fb/conversions.csv", 750)
@@ -93,20 +102,26 @@ object DataProcessing extends App {
       val userId: String = fields(0)
       val itemId: String = fields(1)
       val price: String = fields(2)
+      val quantity: Double = fields(3).trim.toInt
       val timestamp: String = fields(4)
       val milliTime: Double = DateTime
         .parse(timestamp)
         .getMillis
         .toDouble / 1000
 
-      Conversion(userId, itemId, price, milliTime)
+      Conversion(userId, itemId, price, milliTime, quantity)
     })
-    .toDF
+    .toDF 
+
+  conversionDF.write.parquet("conversions.parquet")
+*/
+
+  var conversionDF:DataFrame = sqlContext.read.parquet("conversions.parquet") //Takes 0.5 seconds
 
   println("conversionDF:")
   conversionDF.show
 
-  var user_conversionDF = usersDF.join(conversionDF, "userId")
+  var user_conversionDF = usersDF.join(conversionDF, "userId")  //Fast
   
   // user_conversionDF.show
 
@@ -126,10 +141,9 @@ object DataProcessing extends App {
   println("grouped by user user_conversionDF:")
   user_conversionDF.describe().show
 
-  println("over 5000")
   user_conversionDF = user_conversionDF
     .filter("sum(price) > 5000")
 
-  user_conversionDF.describe().show
+  println(user_conversionDF.count() + " users spent over $5000 in first 30 days")
 
 }

@@ -4,7 +4,7 @@
 		module="fbdata_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160217160906"
+		publication="20160218152859"
 	>
 		<description>
 		FbData
@@ -37,5 +37,6 @@
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.0" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="1.6.0" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="1.6.0" conf="provided->default(compile)"/>
+		<dependency org="joda-time" name="joda-time" rev="2.9.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
