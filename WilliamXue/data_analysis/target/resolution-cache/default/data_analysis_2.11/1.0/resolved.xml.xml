@@ -4,7 +4,7 @@
 		module="data_analysis_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160207152907"
+		publication="20160304234440"
 	>
 		<description>
 		data_analysis
@@ -38,5 +38,6 @@
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="1.6.0" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="1.6.0" conf="provided->default(compile)"/>
 		<dependency org="joda-time" name="joda-time" rev="2.9.2" conf="compile->default(compile)"/>
+		<dependency org="com.databricks" name="spark-csv_2.11" rev="1.4.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

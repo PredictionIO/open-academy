@@ -186,5 +186,8 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="SBT: joda-time:joda-time:2.9.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.databricks:spark-csv_2.11:1.4.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.univocity:univocity-parsers:1.5.1:jar" level="project" />
+    <orderEntry type="library" name="SBT: org.apache.commons:commons-csv:1.1:jar" level="project" />
   </component>
 </module>

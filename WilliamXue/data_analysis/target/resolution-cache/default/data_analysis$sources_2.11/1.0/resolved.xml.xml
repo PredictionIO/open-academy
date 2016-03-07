@@ -4,7 +4,7 @@
 		module="data_analysis$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160207152914"
+		publication="20160304234451"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -29,6 +29,15 @@
 		</dependency>
 		<dependency org="joda-time" name="joda-time" rev="2.9.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="joda-time" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.databricks" name="spark-csv_2.11" rev="1.4.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="spark-csv_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.commons" name="commons-csv" rev="1.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="commons-csv" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.univocity" name="univocity-parsers" rev="1.5.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="univocity-parsers" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.0" transitive="false" conf="provided->default(compile);compile-internal->default(compile);test-internal->default(compile)">
 			<artifact name="spark-core_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>

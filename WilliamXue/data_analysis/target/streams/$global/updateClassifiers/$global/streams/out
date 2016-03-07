@@ -13,7 +13,7 @@
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ab9d464
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69582683
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -22,12 +22,50 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.9.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79251996
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@795e0c70
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.9.2
 [debug] 	found joda-time#joda-time;2.9.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
+[info] Resolving com.databricks#spark-csv_2.11;1.4.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a0b2798
+[debug] sbt-chain: module revision found in cache: com.databricks#spark-csv_2.11;1.4.0
+[debug] 	found com.databricks#spark-csv_2.11;1.4.0 in sbt-chain
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->default(compile)]
+[info] Resolving org.apache.commons#commons-csv;1.1 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8903a89
+[info] Resolving org.apache.commons#commons-csv;1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@8903a89
+[debug] 		tried /Users/williamxue/.ivy2/local/org.apache.commons/commons-csv/1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.apache.commons#commons-csv;1.1
+[debug] 		tried https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom
+[debug] 	jcenter: found md file for org.apache.commons#commons-csv;1.1
+[debug] 		=> https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom (1.1)
+[debug] downloading https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom
+[debug] 	[SUCCESSFUL ] org.apache.commons#commons-csv;1.1!commons-csv.pom(pom.original) (238ms)
+[info] Resolving org.apache.commons#commons-parent;35 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;35 {}
+[debug] sbt-chain: module revision found in cache: org.apache.commons#commons-parent;35
+[debug] 	found org.apache.commons#commons-csv;1.1 in jcenter
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->default(compile)]
+[info] Resolving com.univocity#univocity-parsers;1.5.1 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2198f22e
+[debug] sbt-chain: module revision found in cache: com.univocity#univocity-parsers;1.5.1
+[debug] 	found com.univocity#univocity-parsers;1.5.1 in sbt-chain
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [runtime]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [compile]
@@ -39,6 +77,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
@@ -47,6 +97,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->master]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [test]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [runtime]
@@ -59,6 +121,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
@@ -67,6 +141,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [test->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [test->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [test->compile]
@@ -75,6 +161,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [provided]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [provided->default(compile)]
@@ -83,7 +181,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-core_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4713c001
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5879bb6f
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-core_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-core_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [provided->runtime]
@@ -91,7 +189,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro-mapred;1.7.7 [provided->default(compile)]
 [info] Resolving org.apache.avro#avro-mapred;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5dfa2306
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77e1fe93
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro-mapred;1.7.7
 [debug] 	found org.apache.avro#avro-mapred;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro-mapred;1.7.7 [provided->runtime]
@@ -99,7 +197,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro-mapred;1.7.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro-ipc;1.7.7 [provided->default(compile)]
 [info] Resolving org.apache.avro#avro-ipc;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45243c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43f87332
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro-ipc;1.7.7
 [debug] 	found org.apache.avro#avro-ipc;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro-ipc;1.7.7 [provided->runtime]
@@ -107,7 +205,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro-ipc;1.7.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro;1.7.7 [provided->default(compile)]
 [info] Resolving org.apache.avro#avro;1.7.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6101cf5b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4bb89aaf
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro;1.7.7
 [debug] 	found org.apache.avro#avro;1.7.7 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro;1.7.7 [provided->runtime]
@@ -115,7 +213,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.avro#avro;1.7.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-core-asl;1.9.13 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-core-asl;1.9.13 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55ee6c04
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15c8fa99
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.13
 [debug] 	found org.codehaus.jackson#jackson-core-asl;1.9.13 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-core-asl;1.9.13 [provided->runtime]
@@ -123,7 +221,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-core-asl;1.9.13 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.9.13 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@477ff3cc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a467684
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.13
 [debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.9.13 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [provided->runtime]
@@ -131,7 +229,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-mapper-asl;1.9.13 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-compress;1.4.1 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-compress;1.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6480cb3f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@250415f2
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1
 [debug] 	found org.apache.commons#commons-compress;1.4.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-compress;1.4.1 [provided->runtime]
@@ -139,7 +237,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-compress;1.4.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tukaani#xz;1.0 [provided->default(compile)]
 [info] Resolving org.tukaani#xz;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@147f91eb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@257c409d
 [debug] sbt-chain: module revision found in cache: org.tukaani#xz;1.0
 [debug] 	found org.tukaani#xz;1.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tukaani#xz;1.0 [provided->runtime]
@@ -147,7 +245,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tukaani#xz;1.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.twitter#chill_2.11;0.5.0 [provided->default(compile)]
 [info] Resolving com.twitter#chill_2.11;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a905d9c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@153800b1
 [debug] sbt-chain: module revision found in cache: com.twitter#chill_2.11;0.5.0
 [debug] 	found com.twitter#chill_2.11;0.5.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.twitter#chill_2.11;0.5.0 [provided->runtime]
@@ -155,7 +253,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.twitter#chill_2.11;0.5.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.twitter#chill-java;0.5.0 [provided->default(compile)]
 [info] Resolving com.twitter#chill-java;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29b90f05
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@507ab243
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-java;0.5.0
 [debug] 	found com.twitter#chill-java;0.5.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.twitter#chill-java;0.5.0 [provided->runtime]
@@ -163,7 +261,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.twitter#chill-java;0.5.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.kryo#kryo;2.21 [provided->default(compile)]
 [info] Resolving com.esotericsoftware.kryo#kryo;2.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@738c114b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@438680a4
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.kryo#kryo;2.21
 [debug] 	found com.esotericsoftware.kryo#kryo;2.21 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.kryo#kryo;2.21 [provided->runtime]
@@ -171,7 +269,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.kryo#kryo;2.21 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [provided->default(compile)]
 [info] Resolving com.esotericsoftware.reflectasm#reflectasm;1.07 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e8f2af1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59e42bb8
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.reflectasm#reflectasm;1.07
 [debug] 	found com.esotericsoftware.reflectasm#reflectasm;1.07 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [provided->runtime]
@@ -179,7 +277,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.reflectasm#reflectasm;1.07 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.minlog#minlog;1.2 [provided->default(compile)]
 [info] Resolving com.esotericsoftware.minlog#minlog;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75fc7ebb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e93019e
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	found com.esotericsoftware.minlog#minlog;1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.minlog#minlog;1.2 [provided->runtime]
@@ -187,7 +285,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.esotericsoftware.minlog#minlog;1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.objenesis#objenesis;1.2 [provided->default(compile)]
 [info] Resolving org.objenesis#objenesis;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@348f07eb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@552a3014
 [debug] sbt-chain: module revision found in cache: org.objenesis#objenesis;1.2
 [debug] 	found org.objenesis#objenesis;1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.objenesis#objenesis;1.2 [provided->runtime]
@@ -195,7 +293,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.objenesis#objenesis;1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.xbean#xbean-asm5-shaded;4.4 [provided->default(compile)]
 [info] Resolving org.apache.xbean#xbean-asm5-shaded;4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46a11eb1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54fd16c7
 [debug] sbt-chain: module revision found in cache: org.apache.xbean#xbean-asm5-shaded;4.4
 [debug] 	found org.apache.xbean#xbean-asm5-shaded;4.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.xbean#xbean-asm5-shaded;4.4 [provided->runtime]
@@ -203,7 +301,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.xbean#xbean-asm5-shaded;4.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2eb32d66
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f905e5d
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-common;2.2.0 [provided->runtime]
@@ -211,7 +309,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-common;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-annotations;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72bb7bf9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55388c5c
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-annotations;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-annotations;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [provided->runtime]
@@ -219,7 +317,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-annotations;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-cli#commons-cli;1.2 [provided->default(compile)]
 [info] Resolving commons-cli#commons-cli;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b3d5f5f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48629697
 [debug] sbt-chain: module revision found in cache: commons-cli#commons-cli;1.2
 [debug] 	found commons-cli#commons-cli;1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-cli#commons-cli;1.2 [provided->runtime]
@@ -227,7 +325,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-cli#commons-cli;1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-math;2.1 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-math;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10f2d9ee
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@680824d2
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math;2.1
 [debug] 	found org.apache.commons#commons-math;2.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-math;2.1 [provided->runtime]
@@ -235,7 +333,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-math;2.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-httpclient#commons-httpclient;3.1 [provided->default(compile)]
 [info] Resolving commons-httpclient#commons-httpclient;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e843840
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c9a03bc
 [debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-httpclient#commons-httpclient;3.1 [provided->runtime]
@@ -243,7 +341,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-httpclient#commons-httpclient;3.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->log4j#log4j;1.2.17 [provided->default(compile)]
 [info] Resolving log4j#log4j;1.2.17 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ac7a442
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@685eb221
 [debug] sbt-chain: module revision found in cache: log4j#log4j;1.2.17
 [debug] 	found log4j#log4j;1.2.17 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->log4j#log4j;1.2.17 [provided->runtime]
@@ -251,7 +349,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->log4j#log4j;1.2.17 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-lang#commons-lang;2.5 [provided->default(compile)]
 [info] Resolving commons-lang#commons-lang;2.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69d8eed
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43c75cf5
 [debug] sbt-chain: module revision found in cache: commons-lang#commons-lang;2.5
 [debug] 	found commons-lang#commons-lang;2.5 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-lang#commons-lang;2.5 [provided->runtime]
@@ -259,7 +357,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-lang#commons-lang;2.5 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-configuration#commons-configuration;1.6 [provided->default(compile)]
 [info] Resolving commons-configuration#commons-configuration;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7dc2de33
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a87af94
 [debug] sbt-chain: module revision found in cache: commons-configuration#commons-configuration;1.6
 [debug] 	found commons-configuration#commons-configuration;1.6 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-configuration#commons-configuration;1.6 [provided->runtime]
@@ -267,7 +365,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-configuration#commons-configuration;1.6 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-collections#commons-collections;3.2.1 [provided->default(compile)]
 [info] Resolving commons-collections#commons-collections;3.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@848bc7f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c2b051d
 [debug] sbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1
 [debug] 	found commons-collections#commons-collections;3.2.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-collections#commons-collections;3.2.1 [provided->runtime]
@@ -275,7 +373,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-collections#commons-collections;3.2.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-digester#commons-digester;1.8 [provided->default(compile)]
 [info] Resolving commons-digester#commons-digester;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d4acc09
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@527e1420
 [debug] sbt-chain: module revision found in cache: commons-digester#commons-digester;1.8
 [debug] 	found commons-digester#commons-digester;1.8 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-digester#commons-digester;1.8 [provided->runtime]
@@ -283,7 +381,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-digester#commons-digester;1.8 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-beanutils#commons-beanutils;1.7.0 [provided->default(compile)]
 [info] Resolving commons-beanutils#commons-beanutils;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@393bd17e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d9e290c
 [debug] sbt-chain: module revision found in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	found commons-beanutils#commons-beanutils;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-beanutils#commons-beanutils;1.7.0 [provided->runtime]
@@ -291,7 +389,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-beanutils#commons-beanutils;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.protobuf#protobuf-java;2.5.0 [provided->default(compile)]
 [info] Resolving com.google.protobuf#protobuf-java;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cd60fff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63719f3e
 [debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.protobuf#protobuf-java;2.5.0 [provided->runtime]
@@ -299,7 +397,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.protobuf#protobuf-java;2.5.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-auth;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d9bf072
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@532ce47
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-auth;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-auth;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [provided->runtime]
@@ -307,7 +405,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-auth;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-hdfs;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b60f935
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@752b758c
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-hdfs;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [provided->runtime]
@@ -315,7 +413,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-hdfs;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.mortbay.jetty#jetty-util;6.1.26 [provided->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty-util;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12254dcf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22a2fb0a
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	found org.mortbay.jetty#jetty-util;6.1.26 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.mortbay.jetty#jetty-util;6.1.26 [provided->runtime]
@@ -323,7 +421,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.mortbay.jetty#jetty-util;6.1.26 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22b6420
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16fc4ef1
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [provided->runtime]
@@ -331,7 +429,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66d7fa89
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41e8133d
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [provided->runtime]
@@ -339,7 +437,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63664af9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52b9d260
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-common;2.2.0 [provided->runtime]
@@ -347,7 +445,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-common;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-api;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-api;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@385680e5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d2bdf73
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-api;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-api;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-api;2.2.0 [provided->runtime]
@@ -355,7 +453,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-api;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.inject#guice;3.0 [provided->default(compile)]
 [info] Resolving com.google.inject#guice;3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30c3ca31
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a72e2f7
 [debug] sbt-chain: module revision found in cache: com.google.inject#guice;3.0
 [debug] 	found com.google.inject#guice;3.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.inject#guice;3.0 [provided->runtime]
@@ -363,7 +461,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.inject#guice;3.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->javax.inject#javax.inject;1 [provided->default(compile)]
 [info] Resolving javax.inject#javax.inject;1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f43713b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28184975
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->javax.inject#javax.inject;1 [provided->runtime]
@@ -371,7 +469,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->javax.inject#javax.inject;1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->aopalliance#aopalliance;1.0 [provided->default(compile)]
 [info] Resolving aopalliance#aopalliance;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c4280b6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@373da02
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->aopalliance#aopalliance;1.0 [provided->runtime]
@@ -379,7 +477,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->aopalliance#aopalliance;1.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [provided->default(compile)]
 [info] Resolving org.sonatype.sisu.inject#cglib;2.2.1-v20090111 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ebff944
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f59b056
 [debug] sbt-chain: module revision found in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	found org.sonatype.sisu.inject#cglib;2.2.1-v20090111 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [provided->runtime]
@@ -387,7 +485,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ca64813
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f776975
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	found com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [provided->runtime]
@@ -395,7 +493,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-server;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey#jersey-server;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4887e174
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@213195ef
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	found com.sun.jersey#jersey-server;1.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-server;1.9 [provided->runtime]
@@ -403,7 +501,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-server;1.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->asm#asm;3.1 [provided->default(compile)]
 [info] Resolving asm#asm;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4034f06f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35c267a7
 [debug] sbt-chain: module revision found in cache: asm#asm;3.1
 [debug] 	found asm#asm;3.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->asm#asm;3.1 [provided->runtime]
@@ -411,7 +509,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->asm#asm;3.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-json;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey#jersey-json;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@bc04a0c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60ad53b0
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	found com.sun.jersey#jersey-json;1.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-json;1.9 [provided->runtime]
@@ -419,7 +517,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-json;1.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jettison#jettison;1.1 [provided->default(compile)]
 [info] Resolving org.codehaus.jettison#jettison;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69b17d31
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20b4b0a4
 [debug] sbt-chain: module revision found in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	found org.codehaus.jettison#jettison;1.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jettison#jettison;1.1 [provided->runtime]
@@ -427,7 +525,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jettison#jettison;1.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.3 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-jaxrs;1.8.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7872103e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50ed62a
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-jaxrs;1.8.3
 [debug] 	found org.codehaus.jackson#jackson-jaxrs;1.8.3 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.3 [provided->runtime]
@@ -435,7 +533,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-jaxrs;1.8.3 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-xc;1.8.3 [provided->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-xc;1.8.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e0539db
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f53c3ab
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-xc;1.8.3
 [debug] 	found org.codehaus.jackson#jackson-xc;1.8.3 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-xc;1.8.3 [provided->runtime]
@@ -443,7 +541,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.jackson#jackson-xc;1.8.3 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey.contribs#jersey-guice;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61f3953c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c24f643
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	found com.sun.jersey.contribs#jersey-guice;1.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [provided->runtime]
@@ -451,7 +549,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey.contribs#jersey-guice;1.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-client;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3683e00a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17aa17d
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-client;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-client;2.2.0 [provided->runtime]
@@ -459,7 +557,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-client;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c8eb898
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4436e557
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [provided->runtime]
@@ -467,7 +565,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4928efc9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77a22adb
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-server-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [provided->runtime]
@@ -475,7 +573,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1082c83e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f5e9b3e
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [provided->runtime]
@@ -483,7 +581,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6019ca55
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70aecffd
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [provided->runtime]
@@ -491,7 +589,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [provided->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67ec4d98
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71538d81
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [provided->runtime]
@@ -499,7 +597,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-launcher_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-launcher_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fca9eae
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@508a46d9
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-launcher_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-launcher_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-launcher_2.11;1.6.0 [provided->runtime]
@@ -507,7 +605,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-launcher_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spark-project.spark#unused;1.0.0 [provided->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51604fa4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@180a2671
 [debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spark-project.spark#unused;1.0.0 [provided->runtime]
@@ -515,7 +613,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spark-project.spark#unused;1.0.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-network-common_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-network-common_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f7067b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fe4b4be
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-common_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-network-common_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-network-common_2.11;1.6.0 [provided->runtime]
@@ -523,7 +621,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-network-common_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.netty#netty-all;4.0.29.Final [provided->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.29.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a1b09c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41ec8dd1
 [debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.29.Final
 [debug] 	found io.netty#netty-all;4.0.29.Final in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.netty#netty-all;4.0.29.Final [provided->runtime]
@@ -531,7 +629,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.netty#netty-all;4.0.29.Final [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-network-shuffle_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-network-shuffle_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d62ff40
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ea00fa9
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-shuffle_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-network-shuffle_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-network-shuffle_2.11;1.6.0 [provided->runtime]
@@ -539,7 +637,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-network-shuffle_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.8 [provided->default(compile)]
 [info] Resolving org.fusesource.leveldbjni#leveldbjni-all;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6bdb25e0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48d3cf11
 [debug] sbt-chain: module revision found in cache: org.fusesource.leveldbjni#leveldbjni-all;1.8
 [debug] 	found org.fusesource.leveldbjni#leveldbjni-all;1.8 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.8 [provided->runtime]
@@ -547,7 +645,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.fusesource.leveldbjni#leveldbjni-all;1.8 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3aba1066
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f86b165
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [provided->runtime]
@@ -555,7 +653,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-databind;2.4.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a7c99fc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b0b0c6f
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [provided->runtime]
@@ -563,7 +661,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-core;2.4.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22185b22
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@da4ec24
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.4.4
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [provided->runtime]
@@ -571,7 +669,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.core#jackson-annotations;2.4.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-unsafe_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-unsafe_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ba25c88
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cdd4e61
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-unsafe_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-unsafe_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-unsafe_2.11;1.6.0 [provided->runtime]
@@ -579,7 +677,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-unsafe_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.java.dev.jets3t#jets3t;0.7.1 [provided->default(compile)]
 [info] Resolving net.java.dev.jets3t#jets3t;0.7.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@428f9852
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f4792dc
 [debug] sbt-chain: module revision found in cache: net.java.dev.jets3t#jets3t;0.7.1
 [debug] 	found net.java.dev.jets3t#jets3t;0.7.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.java.dev.jets3t#jets3t;0.7.1 [provided->runtime]
@@ -587,7 +685,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.java.dev.jets3t#jets3t;0.7.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-recipes;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.curator#curator-recipes;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d033272
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7dbea029
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	found org.apache.curator#curator-recipes;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-recipes;2.4.0 [provided->runtime]
@@ -595,7 +693,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-recipes;2.4.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-framework;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.curator#curator-framework;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d46756a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@396a2668
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	found org.apache.curator#curator-framework;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-framework;2.4.0 [provided->runtime]
@@ -603,7 +701,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-framework;2.4.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-client;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.curator#curator-client;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46bcd614
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d43ffaa
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	found org.apache.curator#curator-client;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-client;2.4.0 [provided->runtime]
@@ -611,7 +709,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.curator#curator-client;2.4.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.zookeeper#zookeeper;3.4.5 [provided->default(compile)]
 [info] Resolving org.apache.zookeeper#zookeeper;3.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2715de69
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47d62eec
 [debug] sbt-chain: module revision found in cache: org.apache.zookeeper#zookeeper;3.4.5
 [debug] 	found org.apache.zookeeper#zookeeper;3.4.5 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.zookeeper#zookeeper;3.4.5 [provided->runtime]
@@ -619,7 +717,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.zookeeper#zookeeper;3.4.5 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->jline#jline;0.9.94 [provided->default(compile)]
 [info] Resolving jline#jline;0.9.94 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@488cc80a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b1c8ec5
 [debug] sbt-chain: module revision found in cache: jline#jline;0.9.94
 [debug] 	found jline#jline;0.9.94 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->jline#jline;0.9.94 [provided->runtime]
@@ -627,7 +725,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->jline#jline;0.9.94 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.guava#guava;14.0.1 [provided->default(compile)]
 [info] Resolving com.google.guava#guava;14.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d1fbee0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@523522af
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;14.0.1
 [debug] 	found com.google.guava#guava;14.0.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.guava#guava;14.0.1 [provided->runtime]
@@ -635,7 +733,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.google.guava#guava;14.0.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fb17dd5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22981734
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [provided->runtime]
@@ -651,7 +749,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-lang3;3.3.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-math3;3.4.1 [provided->default(compile)]
 [info] Resolving org.apache.commons#commons-math3;3.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e677762
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b09fc2a
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math3;3.4.1
 [debug] 	found org.apache.commons#commons-math3;3.4.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-math3;3.4.1 [provided->runtime]
@@ -667,7 +765,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#slf4j-api;1.7.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b447769
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73836ca
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.10
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.10 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.10 [provided->runtime]
@@ -675,7 +773,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#jul-to-slf4j;1.7.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59fa9d7f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@684c32b9
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.10
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.10 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [provided->runtime]
@@ -683,7 +781,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#jcl-over-slf4j;1.7.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#slf4j-log4j12;1.7.10 [provided->default(compile)]
 [info] Resolving org.slf4j#slf4j-log4j12;1.7.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27d86436
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@537cc8aa
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-log4j12;1.7.10
 [debug] 	found org.slf4j#slf4j-log4j12;1.7.10 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#slf4j-log4j12;1.7.10 [provided->runtime]
@@ -691,7 +789,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.slf4j#slf4j-log4j12;1.7.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.ning#compress-lzf;1.0.3 [provided->default(compile)]
 [info] Resolving com.ning#compress-lzf;1.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14078fa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27371548
 [debug] sbt-chain: module revision found in cache: com.ning#compress-lzf;1.0.3
 [debug] 	found com.ning#compress-lzf;1.0.3 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.ning#compress-lzf;1.0.3 [provided->runtime]
@@ -699,7 +797,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.ning#compress-lzf;1.0.3 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.xerial.snappy#snappy-java;1.1.2 [provided->default(compile)]
 [info] Resolving org.xerial.snappy#snappy-java;1.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@483edd74
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30e72e06
 [debug] sbt-chain: module revision found in cache: org.xerial.snappy#snappy-java;1.1.2
 [debug] 	found org.xerial.snappy#snappy-java;1.1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.xerial.snappy#snappy-java;1.1.2 [provided->runtime]
@@ -707,7 +805,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.xerial.snappy#snappy-java;1.1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.jpountz.lz4#lz4;1.3.0 [provided->default(compile)]
 [info] Resolving net.jpountz.lz4#lz4;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1be99b1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4bdb84d
 [debug] sbt-chain: module revision found in cache: net.jpountz.lz4#lz4;1.3.0
 [debug] 	found net.jpountz.lz4#lz4;1.3.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.jpountz.lz4#lz4;1.3.0 [provided->runtime]
@@ -715,7 +813,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.jpountz.lz4#lz4;1.3.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.roaringbitmap#RoaringBitmap;0.5.11 [provided->default(compile)]
 [info] Resolving org.roaringbitmap#RoaringBitmap;0.5.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1713342d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c4fdb11
 [debug] sbt-chain: module revision found in cache: org.roaringbitmap#RoaringBitmap;0.5.11
 [debug] 	found org.roaringbitmap#RoaringBitmap;0.5.11 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.roaringbitmap#RoaringBitmap;0.5.11 [provided->runtime]
@@ -723,7 +821,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.roaringbitmap#RoaringBitmap;0.5.11 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-net#commons-net;2.2 [provided->default(compile)]
 [info] Resolving commons-net#commons-net;2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@622811af
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c1002e8
 [debug] sbt-chain: module revision found in cache: commons-net#commons-net;2.2
 [debug] 	found commons-net#commons-net;2.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-net#commons-net;2.2 [provided->runtime]
@@ -731,7 +829,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-net#commons-net;2.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.11 [provided->default(compile)]
 [info] Resolving com.typesafe.akka#akka-remote_2.11;2.3.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6bb7f146
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ab958eb
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-remote_2.11;2.3.11
 [debug] 	found com.typesafe.akka#akka-remote_2.11;2.3.11 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.11 [provided->runtime]
@@ -739,7 +837,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.11 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [provided->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.3.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d7e2b4a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13d255a9
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.3.11
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.3.11 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [provided->runtime]
@@ -747,7 +845,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.11 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe#config;1.2.1 [provided->default(compile)]
 [info] Resolving com.typesafe#config;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a964db5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48f24709
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
 [debug] 	found com.typesafe#config;1.2.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe#config;1.2.1 [provided->runtime]
@@ -755,7 +853,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe#config;1.2.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.netty#netty;3.8.0.Final [provided->default(compile)]
 [info] Resolving io.netty#netty;3.8.0.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ea1ad12
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@326c3646
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final
 [debug] 	found io.netty#netty;3.8.0.Final in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.netty#netty;3.8.0.Final [provided->runtime]
@@ -763,7 +861,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.netty#netty;3.8.0.Final [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [provided->default(compile)]
 [info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2316fc68
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27b3c0a3
 [debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [provided->runtime]
@@ -771,7 +869,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.11 [provided->default(compile)]
 [info] Resolving com.typesafe.akka#akka-slf4j_2.11;2.3.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@749db8bd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31b1cf2d
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.11;2.3.11
 [debug] 	found com.typesafe.akka#akka-slf4j_2.11;2.3.11 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.11 [provided->runtime]
@@ -779,7 +877,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.typesafe.akka#akka-slf4j_2.11;2.3.11 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-jackson_2.11;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-jackson_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@681765de
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48f8c06b
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.11;3.2.10
 [debug] 	found org.json4s#json4s-jackson_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-jackson_2.11;3.2.10 [provided->runtime]
@@ -787,7 +885,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-jackson_2.11;3.2.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-core_2.11;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-core_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@391bb43
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@104497cd
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-core_2.11;3.2.10
 [debug] 	found org.json4s#json4s-core_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-core_2.11;3.2.10 [provided->runtime]
@@ -795,7 +893,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-core_2.11;3.2.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-ast_2.11;3.2.10 [provided->default(compile)]
 [info] Resolving org.json4s#json4s-ast_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19e375d8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@121abc81
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.11;3.2.10
 [debug] 	found org.json4s#json4s-ast_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-ast_2.11;3.2.10 [provided->runtime]
@@ -803,7 +901,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.json4s#json4s-ast_2.11;3.2.10 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.thoughtworks.paranamer#paranamer;2.6 [provided->default(compile)]
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1f7da2bb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bd93cf9
 [debug] sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.thoughtworks.paranamer#paranamer;2.6 [provided->runtime]
@@ -811,7 +909,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.thoughtworks.paranamer#paranamer;2.6 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scalap;2.11.0 [provided->default(compile)]
 [info] Resolving org.scala-lang#scalap;2.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@659ef428
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f6d6355
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scalap;2.11.0
 [debug] 	found org.scala-lang#scalap;2.11.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scalap;2.11.0 [provided->runtime]
@@ -819,7 +917,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scalap;2.11.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.0 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71af6088
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69c07e61
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.0
 [debug] 	found org.scala-lang#scala-compiler;2.11.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.0 [provided->runtime]
@@ -827,7 +925,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-compiler;2.11.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [provided->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11f0d40c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b3ab017
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [provided->runtime]
@@ -835,7 +933,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [provided->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b33bd42
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b26b070
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [provided->runtime]
@@ -843,7 +941,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-core;1.9 [provided->default(compile)]
 [info] Resolving com.sun.jersey#jersey-core;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5452cacb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@88daeec
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-core;1.9
 [debug] 	found com.sun.jersey#jersey-core;1.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-core;1.9 [provided->runtime]
@@ -851,7 +949,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.jersey#jersey-core;1.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.mesos#mesos;0.21.1 [provided->default(compile)]
 [info] Resolving org.apache.mesos#mesos;0.21.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d0031fb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c60fe51
 [debug] sbt-chain: module revision found in cache: org.apache.mesos#mesos;0.21.1
 [debug] 	found org.apache.mesos#mesos;0.21.1 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.mesos#mesos;0.21.1 [provided->runtime]
@@ -859,7 +957,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.mesos#mesos;0.21.1 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.clearspring.analytics#stream;2.7.0 [provided->default(compile)]
 [info] Resolving com.clearspring.analytics#stream;2.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@322fd2b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@396ce0e1
 [debug] sbt-chain: module revision found in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	found com.clearspring.analytics#stream;2.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.clearspring.analytics#stream;2.7.0 [provided->runtime]
@@ -867,7 +965,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.clearspring.analytics#stream;2.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-core;3.1.2 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-core;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d528da
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d1c8242
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-core;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-core;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-core;3.1.2 [provided->runtime]
@@ -875,7 +973,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-core;3.1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-jvm;3.1.2 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-jvm;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b4a60b7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4cd4c0d1
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-jvm;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-jvm;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-jvm;3.1.2 [provided->runtime]
@@ -883,7 +981,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-jvm;3.1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-json;3.1.2 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-json;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a6280e8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40685954
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-json;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-json;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-json;3.1.2 [provided->runtime]
@@ -891,7 +989,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-json;3.1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-graphite;3.1.2 [provided->default(compile)]
 [info] Resolving io.dropwizard.metrics#metrics-graphite;3.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@493bae36
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a9a7a34
 [debug] sbt-chain: module revision found in cache: io.dropwizard.metrics#metrics-graphite;3.1.2
 [debug] 	found io.dropwizard.metrics#metrics-graphite;3.1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-graphite;3.1.2 [provided->runtime]
@@ -899,7 +997,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->io.dropwizard.metrics#metrics-graphite;3.1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 [provided->default(compile)]
 [info] Resolving com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3403394f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@269ec65a
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4
 [debug] 	found com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 [provided->runtime]
@@ -907,7 +1005,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.ivy#ivy;2.4.0 [provided->default(compile)]
 [info] Resolving org.apache.ivy#ivy;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64ea6192
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31472c04
 [debug] sbt-chain: module revision found in cache: org.apache.ivy#ivy;2.4.0
 [debug] 	found org.apache.ivy#ivy;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.ivy#ivy;2.4.0 [provided->runtime]
@@ -915,7 +1013,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.ivy#ivy;2.4.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->oro#oro;2.0.8 [provided->default(compile)]
 [info] Resolving oro#oro;2.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d1b0924
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@693f812
 [debug] sbt-chain: module revision found in cache: oro#oro;2.0.8
 [debug] 	found oro#oro;2.0.8 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->oro#oro;2.0.8 [provided->runtime]
@@ -923,7 +1021,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->oro#oro;2.0.8 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-client;0.8.2 [provided->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-client;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@199510f4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28061716
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-client;0.8.2
 [debug] 	found org.tachyonproject#tachyon-client;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-client;0.8.2 [provided->runtime]
@@ -931,7 +1029,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-client;0.8.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-io#commons-io;2.4 [provided->default(compile)]
 [info] Resolving commons-io#commons-io;2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@707be563
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7042247d
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.4
 [debug] 	found commons-io#commons-io;2.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-io#commons-io;2.4 [provided->runtime]
@@ -939,7 +1037,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-io#commons-io;2.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-hdfs;0.8.2 [provided->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-underfs-hdfs;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1970c5fc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@274458c
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-underfs-hdfs;0.8.2
 [debug] 	found org.tachyonproject#tachyon-underfs-hdfs;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-hdfs;0.8.2 [provided->runtime]
@@ -947,7 +1045,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-hdfs;0.8.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-s3;0.8.2 [provided->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-underfs-s3;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@544576c1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ce33526
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-underfs-s3;0.8.2
 [debug] 	found org.tachyonproject#tachyon-underfs-s3;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-s3;0.8.2 [provided->runtime]
@@ -955,7 +1053,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-s3;0.8.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-local;0.8.2 [provided->default(compile)]
 [info] Resolving org.tachyonproject#tachyon-underfs-local;0.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@494d9f9b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ac640f7
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon-underfs-local;0.8.2
 [debug] 	found org.tachyonproject#tachyon-underfs-local;0.8.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-local;0.8.2 [provided->runtime]
@@ -963,7 +1061,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.tachyonproject#tachyon-underfs-local;0.8.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.razorvine#pyrolite;4.9 [provided->default(compile)]
 [info] Resolving net.razorvine#pyrolite;4.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d78b554
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b578f04
 [debug] sbt-chain: module revision found in cache: net.razorvine#pyrolite;4.9
 [debug] 	found net.razorvine#pyrolite;4.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.razorvine#pyrolite;4.9 [provided->runtime]
@@ -971,7 +1069,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.razorvine#pyrolite;4.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.sf.py4j#py4j;0.9 [provided->default(compile)]
 [info] Resolving net.sf.py4j#py4j;0.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@554158ae
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d863eb5
 [debug] sbt-chain: module revision found in cache: net.sf.py4j#py4j;0.9
 [debug] 	found net.sf.py4j#py4j;0.9 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.sf.py4j#py4j;0.9 [provided->runtime]
@@ -979,7 +1077,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.sf.py4j#py4j;0.9 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-mllib_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-mllib_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@737ed521
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@229bd11
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-mllib_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-mllib_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-mllib_2.11;1.6.0 [provided->runtime]
@@ -987,7 +1085,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-mllib_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-streaming_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3656050c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b46a4f9
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-streaming_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-streaming_2.11;1.6.0 [provided->runtime]
@@ -995,7 +1093,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-streaming_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-sql_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-sql_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@653be10d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e4f7b79
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-sql_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-sql_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-sql_2.11;1.6.0 [provided->runtime]
@@ -1003,7 +1101,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-sql_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-catalyst_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-catalyst_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e4e6e1a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@337cccad
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-catalyst_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-catalyst_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-catalyst_2.11;1.6.0 [provided->runtime]
@@ -1011,7 +1109,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-catalyst_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@467aac94
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e9a0f5
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-reflect;2.11.7
@@ -1020,7 +1118,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-reflect;2.11.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.janino#janino;2.7.8 [provided->default(compile)]
 [info] Resolving org.codehaus.janino#janino;2.7.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fd779b3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@431249b5
 [debug] sbt-chain: module revision found in cache: org.codehaus.janino#janino;2.7.8
 [debug] 	found org.codehaus.janino#janino;2.7.8 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.janino#janino;2.7.8 [provided->runtime]
@@ -1028,7 +1126,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.janino#janino;2.7.8 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.janino#commons-compiler;2.7.8 [provided->default(compile)]
 [info] Resolving org.codehaus.janino#commons-compiler;2.7.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@208546a7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c34d227
 [debug] sbt-chain: module revision found in cache: org.codehaus.janino#commons-compiler;2.7.8
 [debug] 	found org.codehaus.janino#commons-compiler;2.7.8 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.janino#commons-compiler;2.7.8 [provided->runtime]
@@ -1036,7 +1134,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.codehaus.janino#commons-compiler;2.7.8 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-column;1.7.0 [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-column;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@118bf1c7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1341bebb
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-column;1.7.0
 [debug] 	found org.apache.parquet#parquet-column;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-column;1.7.0 [provided->runtime]
@@ -1044,7 +1142,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-column;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-common;1.7.0 [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-common;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73effedf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@666e420e
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-common;1.7.0
 [debug] 	found org.apache.parquet#parquet-common;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-common;1.7.0 [provided->runtime]
@@ -1052,7 +1150,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-common;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-encoding;1.7.0 [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-encoding;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5043dbf2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@388fd463
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-encoding;1.7.0
 [debug] 	found org.apache.parquet#parquet-encoding;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-encoding;1.7.0 [provided->runtime]
@@ -1060,7 +1158,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-encoding;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-generator;1.7.0 [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-generator;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@708610f5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b814bd2
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-generator;1.7.0
 [debug] 	found org.apache.parquet#parquet-generator;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-generator;1.7.0 [provided->runtime]
@@ -1068,7 +1166,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-generator;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-codec#commons-codec;1.5 [provided->default(compile)]
 [info] Resolving commons-codec#commons-codec;1.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a21405b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7cda5368
 [debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.5
 [debug] 	found commons-codec#commons-codec;1.5 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-codec#commons-codec;1.5 [provided->runtime]
@@ -1076,7 +1174,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->commons-codec#commons-codec;1.5 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-hadoop;1.7.0 [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-hadoop;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61dfa34b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43df4545
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-hadoop;1.7.0
 [debug] 	found org.apache.parquet#parquet-hadoop;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-hadoop;1.7.0 [provided->runtime]
@@ -1084,7 +1182,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-hadoop;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-format;2.3.0-incubating [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-format;2.3.0-incubating ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ec8b62
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@def11ef
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-format;2.3.0-incubating
 [debug] 	found org.apache.parquet#parquet-format;2.3.0-incubating in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-format;2.3.0-incubating [provided->runtime]
@@ -1092,7 +1190,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-format;2.3.0-incubating [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-jackson;1.7.0 [provided->default(compile)]
 [info] Resolving org.apache.parquet#parquet-jackson;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cbbf6c2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64be7472
 [debug] sbt-chain: module revision found in cache: org.apache.parquet#parquet-jackson;1.7.0
 [debug] 	found org.apache.parquet#parquet-jackson;1.7.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-jackson;1.7.0 [provided->runtime]
@@ -1100,7 +1198,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.parquet#parquet-jackson;1.7.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-graphx_2.11;1.6.0 [provided->default(compile)]
 [info] Resolving org.apache.spark#spark-graphx_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43726eff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e1bafb0
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-graphx_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-graphx_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-graphx_2.11;1.6.0 [provided->runtime]
@@ -1108,7 +1206,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-graphx_2.11;1.6.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.github.fommil.netlib#core;1.1.2 [provided->default(compile)]
 [info] Resolving com.github.fommil.netlib#core;1.1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20595a6b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11059835
 [debug] sbt-chain: module revision found in cache: com.github.fommil.netlib#core;1.1.2
 [debug] 	found com.github.fommil.netlib#core;1.1.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.github.fommil.netlib#core;1.1.2 [provided->runtime]
@@ -1116,7 +1214,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.github.fommil.netlib#core;1.1.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scalanlp#breeze_2.11;0.11.2 [provided->default(compile)]
 [info] Resolving org.scalanlp#breeze_2.11;0.11.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c65ce53
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d07100b
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze_2.11;0.11.2
 [debug] 	found org.scalanlp#breeze_2.11;0.11.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scalanlp#breeze_2.11;0.11.2 [provided->runtime]
@@ -1124,7 +1222,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scalanlp#breeze_2.11;0.11.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scalanlp#breeze-macros_2.11;0.11.2 [provided->default(compile)]
 [info] Resolving org.scalanlp#breeze-macros_2.11;0.11.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b64bb16
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@244eaac9
 [debug] sbt-chain: module revision found in cache: org.scalanlp#breeze-macros_2.11;0.11.2
 [debug] 	found org.scalanlp#breeze-macros_2.11;0.11.2 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scalanlp#breeze-macros_2.11;0.11.2 [provided->runtime]
@@ -1132,7 +1230,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scalanlp#breeze-macros_2.11;0.11.2 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.sf.opencsv#opencsv;2.3 [provided->default(compile)]
 [info] Resolving net.sf.opencsv#opencsv;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6155a5ce
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@525d1279
 [debug] sbt-chain: module revision found in cache: net.sf.opencsv#opencsv;2.3
 [debug] 	found net.sf.opencsv#opencsv;2.3 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.sf.opencsv#opencsv;2.3 [provided->runtime]
@@ -1140,7 +1238,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->net.sf.opencsv#opencsv;2.3 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.github.rwl#jtransforms;2.4.0 [provided->default(compile)]
 [info] Resolving com.github.rwl#jtransforms;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e08cf18
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fd7e126
 [debug] sbt-chain: module revision found in cache: com.github.rwl#jtransforms;2.4.0
 [debug] 	found com.github.rwl#jtransforms;2.4.0 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.github.rwl#jtransforms;2.4.0 [provided->runtime]
@@ -1148,7 +1246,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.github.rwl#jtransforms;2.4.0 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spire-math#spire_2.11;0.7.4 [provided->default(compile)]
 [info] Resolving org.spire-math#spire_2.11;0.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@742fb43
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30718d88
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire_2.11;0.7.4
 [debug] 	found org.spire-math#spire_2.11;0.7.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spire-math#spire_2.11;0.7.4 [provided->runtime]
@@ -1156,7 +1254,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spire-math#spire_2.11;0.7.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spire-math#spire-macros_2.11;0.7.4 [provided->default(compile)]
 [info] Resolving org.spire-math#spire-macros_2.11;0.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6aceb46c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d4674a5
 [debug] sbt-chain: module revision found in cache: org.spire-math#spire-macros_2.11;0.7.4
 [debug] 	found org.spire-math#spire-macros_2.11;0.7.4 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spire-math#spire-macros_2.11;0.7.4 [provided->runtime]
@@ -1164,7 +1262,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.spire-math#spire-macros_2.11;0.7.4 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-model;1.1.15 [provided->default(compile)]
 [info] Resolving org.jpmml#pmml-model;1.1.15 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@569d14ae
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@facc607
 [debug] sbt-chain: module revision found in cache: org.jpmml#pmml-model;1.1.15
 [debug] 	found org.jpmml#pmml-model;1.1.15 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-model;1.1.15 [provided->runtime]
@@ -1172,7 +1270,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-model;1.1.15 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-agent;1.1.15 [provided->default(compile)]
 [info] Resolving org.jpmml#pmml-agent;1.1.15 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@779fd693
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@622e1792
 [debug] sbt-chain: module revision found in cache: org.jpmml#pmml-agent;1.1.15
 [debug] 	found org.jpmml#pmml-agent;1.1.15 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-agent;1.1.15 [provided->runtime]
@@ -1180,7 +1278,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-agent;1.1.15 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-schema;1.1.15 [provided->default(compile)]
 [info] Resolving org.jpmml#pmml-schema;1.1.15 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4aac0488
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a9ec48b
 [debug] sbt-chain: module revision found in cache: org.jpmml#pmml-schema;1.1.15
 [debug] 	found org.jpmml#pmml-schema;1.1.15 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-schema;1.1.15 [provided->runtime]
@@ -1188,7 +1286,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.jpmml#pmml-schema;1.1.15 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.bind#jaxb-impl;2.2.7 [provided->default(compile)]
 [info] Resolving com.sun.xml.bind#jaxb-impl;2.2.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56c1fb7c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d70bfc
 [debug] sbt-chain: module revision found in cache: com.sun.xml.bind#jaxb-impl;2.2.7
 [debug] 	found com.sun.xml.bind#jaxb-impl;2.2.7 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.bind#jaxb-impl;2.2.7 [provided->runtime]
@@ -1196,7 +1294,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.bind#jaxb-impl;2.2.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.bind#jaxb-core;2.2.7 [provided->default(compile)]
 [info] Resolving com.sun.xml.bind#jaxb-core;2.2.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8992bd7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35f15a5c
 [debug] sbt-chain: module revision found in cache: com.sun.xml.bind#jaxb-core;2.2.7
 [debug] 	found com.sun.xml.bind#jaxb-core;2.2.7 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.bind#jaxb-core;2.2.7 [provided->runtime]
@@ -1204,7 +1302,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.bind#jaxb-core;2.2.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->javax.xml.bind#jaxb-api;2.2.7 [provided->default(compile)]
 [info] Resolving javax.xml.bind#jaxb-api;2.2.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51693c4c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@144578f7
 [debug] sbt-chain: module revision found in cache: javax.xml.bind#jaxb-api;2.2.7
 [debug] 	found javax.xml.bind#jaxb-api;2.2.7 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->javax.xml.bind#jaxb-api;2.2.7 [provided->runtime]
@@ -1212,7 +1310,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->javax.xml.bind#jaxb-api;2.2.7 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.istack#istack-commons-runtime;2.16 [provided->default(compile)]
 [info] Resolving com.sun.istack#istack-commons-runtime;2.16 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63937fbe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@325e9375
 [debug] sbt-chain: module revision found in cache: com.sun.istack#istack-commons-runtime;2.16
 [debug] 	found com.sun.istack#istack-commons-runtime;2.16 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.istack#istack-commons-runtime;2.16 [provided->runtime]
@@ -1220,7 +1318,7 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.istack#istack-commons-runtime;2.16 [provided->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.fastinfoset#FastInfoset;1.2.12 [provided->default(compile)]
 [info] Resolving com.sun.xml.fastinfoset#FastInfoset;1.2.12 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a4cae76
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75ebbafe
 [debug] sbt-chain: module revision found in cache: com.sun.xml.fastinfoset#FastInfoset;1.2.12
 [debug] 	found com.sun.xml.fastinfoset#FastInfoset;1.2.12 in sbt-chain
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.sun.xml.fastinfoset#FastInfoset;1.2.12 [provided->runtime]
@@ -1239,6 +1337,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->master]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [provided]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [provided->default(compile)]
@@ -1825,6 +1935,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile-internal->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile-internal->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile-internal->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [compile-internal->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [compile-internal->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [compile-internal->compile]
@@ -2411,6 +2533,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
@@ -2419,6 +2553,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->master]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [optional]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime-internal->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime-internal->runtime]
@@ -2428,6 +2574,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime-internal->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime-internal->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime-internal->master]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [test-internal]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [test]
@@ -2441,6 +2599,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [compile->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [compile->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
@@ -2449,6 +2619,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [runtime->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [runtime->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [test->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [test->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [test->compile]
@@ -2457,6 +2639,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test->master]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#data_analysis$sources_2.11;1.0 [provided]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.scala-lang#scala-library;2.11.7 [provided->default(compile)]
@@ -3043,6 +3237,18 @@
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test-internal->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test-internal->compile]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->joda-time#joda-time;2.9.2 [test-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [test-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.commons#commons-csv;1.1 [test-internal->master]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test-internal->default(compile)]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test-internal->runtime]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test-internal->compile]
+[debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->com.univocity#univocity-parsers;1.5.1 [test-internal->master]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [test-internal->default(compile)]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [test-internal->runtime]
 [debug] == resolving dependencies default#data_analysis$sources_2.11;1.0->org.apache.spark#spark-core_2.11;1.6.0 [test-internal->compile]
@@ -3674,6 +3880,29 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.2!joda-time.jar
 [debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.2!joda-time.jar(src)
+[debug] 		tried /Users/williamxue/.ivy2/local/com.databricks/spark-csv_2.11/1.4.0/srcs/spark-csv_2.11-sources.jar
+[debug] 	[NOT REQUIRED] com.databricks#spark-csv_2.11;1.4.0!spark-csv_2.11.jar
+[debug] 		tried https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0-sources.jar
+[info] downloading https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0-sources.jar
+[info] 	[SUCCESSFUL ] com.databricks#spark-csv_2.11;1.4.0!spark-csv_2.11.jar(src) (915ms)
+[debug] 	[NOT REQUIRED] org.apache.commons#commons-csv;1.1!commons-csv.jar
+[debug] 		tried https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1-sources.jar
+[info] downloading https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1-sources.jar
+[info] 	[SUCCESSFUL ] org.apache.commons#commons-csv;1.1!commons-csv.jar(src) (365ms)
+[debug] 		tried /Users/williamxue/.ivy2/local/com.univocity/univocity-parsers/1.5.1/srcs/univocity-parsers-sources.jar
+[debug] 	[NOT REQUIRED] com.univocity#univocity-parsers;1.5.1!univocity-parsers.jar
+[debug] 		tried https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar
+[info] downloading https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar
+[info] 	[SUCCESSFUL ] com.univocity#univocity-parsers;1.5.1!univocity-parsers.jar(src) (429ms)
 [debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.11;1.6.0!spark-core_2.11.jar
 [debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.11;1.6.0!spark-core_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.avro#avro-mapred;1.7.7!avro-mapred.jar
@@ -3874,8 +4103,8 @@
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-jvm;3.1.2!metrics-jvm.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.2!metrics-json.jar
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.2!metrics-json.jar(src)
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar(src)
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.2!metrics-graphite.jar
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4!jackson-module-scala_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.11;2.4.4!jackson-module-scala_2.11.jar
 [debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.4.0!ivy.jar
@@ -3962,7 +4191,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 10118ms :: artifacts dl 324ms
+[debug] :: resolution report :: resolve 4543ms :: artifacts dl 1839ms
 [debug] 	report for default#data_analysis$sources_2.11;1.0 compile produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-compile.xml
 [debug] 	report for default#data_analysis$sources_2.11;1.0 runtime produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-runtime.xml
 [debug] 	report for default#data_analysis$sources_2.11;1.0 test produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-test.xml
@@ -3976,4 +4205,4 @@
 [debug] 	report for default#data_analysis$sources_2.11;1.0 docs produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-docs.xml
 [debug] 	report for default#data_analysis$sources_2.11;1.0 pom produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-pom.xml
 [debug] 	report for default#data_analysis$sources_2.11;1.0 scala-tool produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-scala-tool.xml
-[debug] 	resolve done (10118ms resolve - 324ms download)
+[debug] 	resolve done (4543ms resolve - 1839ms download)

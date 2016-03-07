@@ -7,8 +7,43 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160207152907"/>
+		date="20160304234441"/>
 	<dependencies>
+		<module organisation="com.databricks" name="spark-csv_2.11">
+			<revision name="1.4.0" status="release" pubdate="20160304140512" resolver="jcenter" artresolver="jcenter" homepage="https://github.com/databricks/spark-csv" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="3999" time="281" location="/Users/williamxue/.ivy2/cache/com.databricks/spark-csv_2.11/ivy-1.4.0.xml" searched="true" original-local-location="/Users/williamxue/.ivy2/cache/com.databricks/spark-csv_2.11/ivy-1.4.0.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0.pom"/>
+				<caller organisation="default" name="data_analysis_2.11" conf="test, compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spark-csv_2.11" type="jar" ext="jar" status="successful" details="" size="159215" time="457" location="/Users/williamxue/.ivy2/cache/com.databricks/spark-csv_2.11/jars/spark-csv_2.11-1.4.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/databricks/spark-csv_2.11/1.4.0/spark-csv_2.11-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.univocity" name="univocity-parsers">
+			<revision name="1.5.1" status="release" pubdate="20150408185600" resolver="jcenter" artresolver="jcenter" homepage="http://github.com/uniVocity/univocity-parsers" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7764" time="257" location="/Users/williamxue/.ivy2/cache/com.univocity/univocity-parsers/ivy-1.5.1.xml" searched="true" original-local-location="/Users/williamxue/.ivy2/cache/com.univocity/univocity-parsers/ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1.pom"/>
+				<caller organisation="com.databricks" name="spark-csv_2.11" conf="default, compile, runtime, master" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="univocity-parsers" type="jar" ext="jar" status="successful" details="" size="148962" time="371" location="/Users/williamxue/.ivy2/cache/com.univocity/univocity-parsers/jars/univocity-parsers-1.5.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-csv">
+			<revision name="1.1" status="release" pubdate="20141116154800" resolver="jcenter" artresolver="jcenter" homepage="http://commons.apache.org/proper/commons-csv/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="successful" details="" size="14165" time="289" location="/Users/williamxue/.ivy2/cache/org.apache.commons/commons-csv/ivy-1.1.xml" searched="true" original-local-location="/Users/williamxue/.ivy2/cache/org.apache.commons/commons-csv/ivy-1.1.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.pom"/>
+				<caller organisation="com.databricks" name="spark-csv_2.11" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="commons-csv" type="jar" ext="jar" status="successful" details="" size="36888" time="259" location="/Users/williamxue/.ivy2/cache/org.apache.commons/commons-csv/jars/commons-csv-1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/commons/commons-csv/1.1/commons-csv-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="joda-time" name="joda-time">
 			<revision name="2.9.2" status="release" pubdate="20160128084408" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -22,9 +57,10 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.11.7" status="release" pubdate="20150803120311" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="2.11.7" status="release" pubdate="20150803120311" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/williamxue/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="com.databricks" name="spark-csv_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.4.0"/>
 				<caller organisation="default" name="data_analysis_2.11" conf="test, compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5745606" time="0" location="/Users/williamxue/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar">
