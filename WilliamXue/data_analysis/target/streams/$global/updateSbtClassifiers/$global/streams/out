@@ -1,6 +1,5 @@
 [debug] Other repositories:
 [debug] Default repositories:
-[debug] no default cache defined: set to /Users/williamxue/.ivy2/cache
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#data_analysis$sbt_2.11;1.0
 [debug] 	confs: [default]
@@ -757,9 +756,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 1047ms :: artifacts dl 17ms
+[debug] :: resolution report :: resolve 967ms :: artifacts dl 33ms
 [debug] 	report for default#data_analysis$sbt_2.11;1.0 default produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sbt_2.11-default.xml
-[debug] 	resolve done (1047ms resolve - 17ms download)
+[debug] 	resolve done (967ms resolve - 33ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#data_analysis$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1148,6 +1147,6 @@
 [debug] 	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.14.0!sbt-assembly.jar(src)
 [debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.10;2.2.1!scalactic_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.pantsbuild.jarjar#jarjar;1.5!jarjar.jar(src)
-[debug] :: resolution report :: resolve 232ms :: artifacts dl 43ms
+[debug] :: resolution report :: resolve 188ms :: artifacts dl 41ms
 [debug] 	report for default#data_analysis$sources_2.11;1.0 default produced in /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/resolution-cache/reports/default-data_analysis$sources_2.11-default.xml
-[debug] 	resolve done (232ms resolve - 43ms download)
+[debug] 	resolve done (188ms resolve - 41ms download)

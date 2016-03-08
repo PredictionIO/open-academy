@@ -2,7 +2,8 @@ package dataAnalysis
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.{UserDefinedFunction, DataFrame, SQLContext}
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.{Row, UserDefinedFunction, DataFrame, SQLContext}
 import org.joda.time.DateTime
 import org.apache.spark.sql.functions._
 import java.util.concurrent.TimeUnit
@@ -82,7 +83,6 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
       combinedTable = loadSixMonthRevenueTable()
       combinedTable.write.parquet(sixMonthRevenueDataPath)
     }
-
   }
 
   // Load raw tables of initial files
@@ -210,6 +210,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
 
   /**
     * Loads a table with all the information about the users including their revenues six months after they signed up.
+    *
     * @return a dataframe representing a table with all the information about users that we have.
     */
   private def loadSixMonthRevenueTable(): DataFrame = {
@@ -276,9 +277,17 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   }
 
   def exportCombinedTableToCSV() = {
-    combinedTable
+    val exportDirectory = dataPath + "/processed"
+
+    val combinedTableRDD: RDD[String] = combinedTable
       .filter($"sixMonthRevenue" > 0)
-      .write.format("com.databricks.spark.csv").save(dataPath + "/preprocessed/positiveSixMonthRevenue.csv")
+      .select("sixMonthRevenue")
+      .rdd.map[String]{row: Row => row.toString()}
+
+    if (Files.notExists(Paths.get(exportDirectory + "/six_month_revenue_parts"))) {
+      combinedTableRDD
+        .saveAsTextFile(exportDirectory + "/six_month_revenue_parts")
+    }
   }
 
   // Methods to show tables.

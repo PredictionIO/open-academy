@@ -4,7 +4,7 @@
 		module="data_analysis$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160304234450"
+		publication="20160307153500"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
