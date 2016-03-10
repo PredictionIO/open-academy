@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.quantifind
+Implementation-Title: Wisp
+Implementation-Version: 0.0.4
+Implementation-Vendor-Id: com.quantifind
+Specification-Vendor: com.quantifind
+Specification-Title: Wisp
+Specification-Version: 0.0.4
+

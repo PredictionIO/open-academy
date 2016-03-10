@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: net.databinder
+Implementation-Title: unfiltered-filter
+Implementation-Version: 0.8.3
+Implementation-Vendor-Id: net.databinder
+Specification-Vendor: net.databinder
+Specification-Title: unfiltered-filter
+Implementation-URL: http://unfiltered.databinder.net/
+Specification-Version: 0.8.3
+
