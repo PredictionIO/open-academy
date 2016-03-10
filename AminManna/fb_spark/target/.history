@@ -27,3 +27,6 @@ assemblyPackageDependency
 package
 compile
 run
+clean
+compile
+package
