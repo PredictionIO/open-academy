@@ -282,7 +282,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     val combinedTableRDD: RDD[String] = combinedTable
       .filter($"sixMonthRevenue" > 0)
       .select("sixMonthRevenue")
-      .rdd.map[String]{row: Row => row.toString()}
+      .rdd.map[String]{row: Row => row.getAs[Double](0).toString}
 
     if (Files.notExists(Paths.get(exportDirectory + "/six_month_revenue_parts"))) {
       combinedTableRDD
