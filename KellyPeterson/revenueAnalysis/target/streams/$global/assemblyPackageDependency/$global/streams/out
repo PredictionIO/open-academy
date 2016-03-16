@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0mIncluding from cache: joda-convert-1.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: joda-time-2.9.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library.jar[0m
+[0m[[0mdebug[0m] [0mCalculate mappings...[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/joda-time/joda-time/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/joda-time/joda-time/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.joda/joda-convert/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.joda/joda-convert/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 5 files[0m
+[0m[[0minfo[0m] [0mAssembly up to date: /Users/kellypet/Desktop/PredictionIO/Assignment_1/cltv/target/scala-2.10/cltv-assembly-1.0-deps.jar[0m
