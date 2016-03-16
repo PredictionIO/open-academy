@@ -1,6 +1,5 @@
-sbt.ResolveException: unresolved dependency: org.apache.spark#spark-core_2.11;1.6.8: not found
-unresolved dependency: org.apache.spark#spark-mllib_2.11;1.6.8: not found
-unresolved dependency: org.apache.spark#spark-sql_2.11;1.6.8: not found
+sbt.ResolveException: unresolved dependency: org.scala-lang#scala-library;2.10.7: not found
+unresolved dependency: org.scala-lang#scala-compiler;2.10.7: not found
 	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:291)
 	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:188)
 	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:165)
@@ -51,6 +50,5 @@ unresolved dependency: org.apache.spark#spark-sql_2.11;1.6.8: not found
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-[error] (*:ssExtractDependencies) sbt.ResolveException: unresolved dependency: org.apache.spark#spark-core_2.11;1.6.8: not found
-[error] unresolved dependency: org.apache.spark#spark-mllib_2.11;1.6.8: not found
-[error] unresolved dependency: org.apache.spark#spark-sql_2.11;1.6.8: not found
+[error] (*:ssExtractDependencies) sbt.ResolveException: unresolved dependency: org.scala-lang#scala-library;2.10.7: not found
+[error] unresolved dependency: org.scala-lang#scala-compiler;2.10.7: not found

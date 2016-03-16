@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.quantifind
+Implementation-Title: Sumac
+Implementation-Version: 0.3.0
+Implementation-Vendor-Id: com.quantifind
+Vcs-Release-Hash: c8061353e09b7492fe751748a633744d03e96091
+Specification-Vendor: com.quantifind
+Specification-Title: Sumac
+Specification-Version: 0.3.0
+

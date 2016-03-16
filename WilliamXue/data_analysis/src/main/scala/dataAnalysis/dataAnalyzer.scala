@@ -2,35 +2,94 @@ package dataAnalysis
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.{UserDefinedFunction, DataFrame, SQLContext}
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.{Row, UserDefinedFunction, DataFrame, SQLContext}
 import org.joda.time.DateTime
 import org.apache.spark.sql.functions._
 import java.util.concurrent.TimeUnit
+import java.nio.file.{Files, Paths}
 
 /**
   * Created by williamxue on 2/7/16.
   */
 class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
+
   protected val sparkContext: SparkContext = new SparkContext(sparkConf)
   protected val sqlContext: SQLContext = new SQLContext(sparkContext)
   import sqlContext.implicits._
 
-  // Initialize tables
-  protected val usersTable: DataFrame = loadUsersTable()
-  protected val usersAdsTable: DataFrame = loadUsersAdsTable()
-  protected val itemsTable: DataFrame = loadItemsTable()
-  protected val conversionsTable: DataFrame = loadConversionsTable()
-  protected val viewsTable: DataFrame = loadViewsTable()
-  protected var conversionsWithRevTable: DataFrame = loadConversionsWithRevTable()
-  protected val usersExtendedDataTable: DataFrame = usersTable.join(usersAdsTable, "userId")
-  protected val combinedTable: DataFrame = loadUserRevenuesTable()
-    .dropDuplicates(Seq("userId"))
+  // Initialize default tables
+  protected var usersTable: DataFrame = _
+  protected var usersAdsTable: DataFrame = _
+  protected var itemsTable: DataFrame = _
+  protected var conversionsTable: DataFrame = _
+  protected var viewsTable: DataFrame = _
+
+  // Initialize the master table containing all user info
+  protected var combinedTable: DataFrame = _
+
+  loadTables()
 
 
+  private def loadTables() = {
+    val usersDataPath = dataPath + "/preprocessed/users.parquet"
+    val usersAdsDataPath = dataPath + "/preprocessed/users_ads.parquet"
+    val itemsDataPath = dataPath + "/preprocessed/items.parquet"
+    val conversionsDataPath = dataPath + "/preprocessed/conversions.parquet"
+    val viewsDataPath = dataPath + "/preprocessed/views.parquet"
+    val sixMonthRevenueDataPath = dataPath + "/preprocessed/sixMonthRevenue.parquet"
+
+    // Load the basic tables
+    if (Files.exists(Paths.get(usersDataPath))) {
+      print("Loading...")
+      usersTable = sqlContext.read.parquet(usersDataPath)
+    } else {
+      usersTable = loadUsersTable()
+      usersTable.write.parquet(usersDataPath)
+    }
+
+    if (Files.exists(Paths.get(usersAdsDataPath))) {
+      usersAdsTable = sqlContext.read.parquet(usersAdsDataPath)
+    } else {
+      usersAdsTable = loadUsersAdsTable()
+      usersAdsTable.write.parquet(usersAdsDataPath)
+    }
+
+    if (Files.exists(Paths.get(itemsDataPath))) {
+      itemsTable = sqlContext.read.parquet(itemsDataPath)
+    } else {
+      itemsTable = loadItemsTable()
+      itemsTable.write.parquet(itemsDataPath)
+    }
+
+    if (Files.exists(Paths.get(conversionsDataPath))) {
+      conversionsTable = sqlContext.read.parquet(conversionsDataPath)
+    } else {
+      conversionsTable = loadConversionsTable()
+      conversionsTable.write.parquet(conversionsDataPath)
+    }
+
+    if (Files.exists(Paths.get(viewsDataPath))) {
+      viewsTable = sqlContext.read.parquet(viewsDataPath)
+    } else {
+      viewsTable = loadViewsTable()
+      viewsTable.write.parquet(viewsDataPath)
+    }
+
+    // Load the table created by synthesizing user information that contains all of the user data
+    if (Files.exists(Paths.get(sixMonthRevenueDataPath))) {
+      combinedTable = sqlContext.read.parquet(sixMonthRevenueDataPath)
+    } else {
+      combinedTable = loadSixMonthRevenueTable()
+      combinedTable.write.parquet(sixMonthRevenueDataPath)
+    }
+  }
+
+  // Load raw tables of initial files
   private def loadUsersTable() : DataFrame = {
 
     val users: DataFrame = sparkContext
-      .textFile(dataPath + "users.csv", 750)
+      .textFile(dataPath + "/fb/users.csv", 750)
       .map(line => {
         val fields: Array[String] = line.split(",")
         val numFields: Int = fields.length
@@ -58,7 +117,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   private def loadUsersAdsTable() : DataFrame = {
 
     val usersAds: DataFrame = sparkContext
-      .textFile(dataPath + "users_ads.csv", 750)
+      .textFile(dataPath + "/fb/users_ads.csv", 750)
       .map(line => {
         val fields = line.split(",")
 
@@ -81,7 +140,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   private def loadItemsTable() : DataFrame = {
 
     val items: DataFrame = sparkContext
-      .textFile(dataPath + "items.csv", 750)
+      .textFile(dataPath + "/fb/items.csv", 750)
       .map(line => {
         val fields = line.split(",")
 
@@ -105,7 +164,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   private def loadConversionsTable() : DataFrame = {
 
     val conversions: DataFrame = sparkContext
-      .textFile(dataPath + "conversions.csv", 750)
+      .textFile(dataPath + "/fb/conversions.csv", 750)
       .map(line => {
         val fields = line.split(",")
 
@@ -113,11 +172,11 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
         val itemId: String = fields(1)
         val price: Double = fields(2).toDouble
         val quantity: Int = fields(3).toInt
-        val timestamp: Long = DateTime
+        val eventTime: Long = DateTime
           .parse(fields(4))
           .getMillis
 
-        DataAnalyzer.Conversions(userId, itemId, price, quantity, timestamp)
+        DataAnalyzer.Conversions(userId, itemId, price, quantity, eventTime)
       })
       .toDF
 
@@ -129,49 +188,107 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     val ValidPageTypes: List[String] = List("Product", "Collection")
 
     val views: DataFrame = sparkContext
-      .textFile(dataPath + "views.csv", 750)
+      .textFile(dataPath + "/fb/views.csv", 750)
       .map(line => {
         val fields = line.split(",")
 
         val userId: String = fields(0)
         val itemId: String = fields(1)
-        val timestamp: Long = DateTime
-          .parse(fields(3))
+        val eventTime: Long = DateTime
+          .parse(fields(2))
           .getMillis
-        val pagetype = fields(4)
+        val pageType: String = fields(3)
 
-        DataAnalyzer.Views(userId, itemId, timestamp, pagetype)
+        DataAnalyzer.Views(userId, itemId, eventTime, pageType)
       })
       .toDF
-      .filter($"pagetype".isin(ValidPageTypes:_*))
+      .filter($"pageType".isin(ValidPageTypes:_*))
 
     // return DataFrame with views information
     views
   }
 
-  private def loadConversionsWithRevTable() : DataFrame = {
+  /**
+    * Loads a table with all the information about the users including their revenues six months after they signed up.
+    *
+    * @return a dataframe representing a table with all the information about users that we have.
+    */
+  private def loadSixMonthRevenueTable(): DataFrame = {
     val revenueUDF: UserDefinedFunction = udf((price: Double, quantity: Int) => price * quantity)
 
-    val conversionsWithRev: DataFrame = conversionsTable.withColumn("revenue", revenueUDF($"price", $"quantity"))
+    val conversionsWithRevTable: DataFrame = conversionsTable.withColumn("revenue", revenueUDF($"price", $"quantity"))
 
-    conversionsWithRev
-  }
-
-
-  private def loadUserRevenuesTable(): DataFrame = {
-    val userSpentTable: DataFrame = conversionsWithRevTable.groupBy($"userId")
+    var userSpentTable: DataFrame = conversionsWithRevTable
+      .groupBy($"userId")
       .agg(sum("revenue"))
-      .withColumnRenamed("sum(revenue)", "revenue")
+      .withColumnRenamed("sum(revenue)", "sixMonthRevenue")
 
-    userSpentTable.withColumnRenamed("userId", "userIdRev")
+    userSpentTable = userSpentTable.withColumnRenamed("userId", "id")
 
-    val userPurchasesTable: DataFrame = usersExtendedDataTable
-      .join(userSpentTable, usersExtendedDataTable("userId") === userSpentTable("userIdRev"), "left_outer")
-      .drop("userIdRev")
+    val minActivityTime: Long = extractMinActivityTime()
+    val maxActivityTime: Long = extractMaxActivityTime()
+
+    val usersExtendedDataTable: DataFrame = usersTable.join(usersAdsTable, "userId")
+    val usersDataEnoughTable: DataFrame = filterUsersSixMonths(usersExtendedDataTable, minActivityTime, maxActivityTime)
+
+    val userPurchasesTable: DataFrame = usersDataEnoughTable
+      .join(userSpentTable, usersDataEnoughTable("userId") === userSpentTable("id"), "left_outer")
+      .drop("id")
+      .dropDuplicates(Seq("userId"))
+      .na.fill(0.0)
 
     userPurchasesTable
   }
 
+  private def filterUsersSixMonths(tableToFilter: DataFrame, minActivityTime: Long, maxActivityTime: Long): DataFrame = {
+    val sixMonths = 365/2.0.toLong
+    val usersTableSixMonthsDataAvaliable : DataFrame = tableToFilter
+      .filter($"signupTime" > minActivityTime)
+      .filter($"signupTime" < maxActivityTime - TimeUnit.DAYS.toMillis(sixMonths))
+    usersTableSixMonthsDataAvaliable
+  }
+
+  private def extractMinActivityTime() : Long = {
+    val minActivityTimeConversions = conversionsTable
+      .select(min("eventTime"))
+      .first()
+      .getAs[Long]("min(eventTime)")
+
+    val minActivityTimeViews = viewsTable
+      .select(min("eventTime"))
+      .first()
+      .getAs[Long]("min(eventTime)")
+
+    math.min(minActivityTimeConversions, minActivityTimeViews)
+  }
+
+  private def extractMaxActivityTime() : Long = {
+    val maxActivityTimeConversions = conversionsTable
+      .select(max("eventTime"))
+      .first()
+      .getAs[Long]("max(eventTime)")
+
+    val maxActivityTimeViews = viewsTable
+      .select(max("eventTime"))
+      .first()
+      .getAs[Long]("max(eventTime)")
+
+    math.max(maxActivityTimeConversions, maxActivityTimeViews)
+  }
+
+  def exportCombinedTableToCSV() = {
+    val exportDirectory = dataPath + "/processed"
+
+    val combinedTableRDD: RDD[String] = combinedTable
+      .filter($"sixMonthRevenue" > 0)
+      .select("sixMonthRevenue")
+      .rdd.map[String]{row: Row => row.getAs[Double](0).toString}
+
+    if (Files.notExists(Paths.get(exportDirectory + "/six_month_revenue_parts"))) {
+      combinedTableRDD
+        .saveAsTextFile(exportDirectory + "/six_month_revenue_parts")
+    }
+  }
 
   // Methods to show tables.
 
@@ -183,7 +300,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     combinedTable.show
   }
 
-  // Methods to get various information about the data.
+  // Methods to get various information about the data.================================================================
   // Useful for answering the quiz.
 
   def countUsers : Long = {
@@ -191,7 +308,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   }
 
   def countUsersOverPrice(price: Double): Long = {
-    usersExtendedDataTable.filter($"revenue" > price)
+    combinedTable.filter($"revenue" > price)
       .count
   }
 
@@ -232,7 +349,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
 
     val TimeLimit = StartTime + DaysUntilTimeLimit
 
-    val conversionsBeforeTimeLimitTable = conversionsTable.filter($"timestamp" < TimeLimit)
+    val conversionsBeforeTimeLimitTable = conversionsTable.filter($"eventTime" < TimeLimit)
 
     conversionsBeforeTimeLimitTable
       .dropDuplicates(Seq("userId"))
@@ -250,21 +367,24 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
 
     val TimeLimit = StartTime + DaysUntilTimeLimit
 
-    val conversionsBeforeTimeLimitTable = conversionsTable.filter($"timestamp" < TimeLimit)
+    val conversionsBeforeTimeLimitTable = conversionsTable.filter($"eventTime" < TimeLimit)
 
     val revenueUDF: UserDefinedFunction = udf((price: Double, quantity: Int) => price * quantity)
 
-    val conversionsWithRevTimeLimit: DataFrame = conversionsBeforeTimeLimitTable.withColumn("revenue", revenueUDF($"price", $"quantity"))
+    val conversionsWithRevTimeLimit: DataFrame = conversionsBeforeTimeLimitTable
+      .withColumn("revenue", revenueUDF($"price", $"quantity"))
 
-    val userRevenueBeforeTimeLimitTable: DataFrame = conversionsWithRevTimeLimit.groupBy($"userId")
+    val userRevenueBeforeTimeLimitTable: DataFrame = conversionsWithRevTimeLimit
+      .groupBy($"userId")
       .agg(sum("revenue"))
       .withColumnRenamed("sum(revenue)", "revenue")
+      .filter($"revenue" > price)
 
     userRevenueBeforeTimeLimitTable.count
   }
 
   def findEarliestSignUpDate: String = {
-    val earliestSignUpDouble: Double = usersTable
+    val earliestSignUpDouble: Double = combinedTable
       .select(min("signupTime"))
       .first()
       .getAs[Double]("min(signupTime)")
@@ -274,7 +394,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   }
 
   def findLatestSignUpDate: String = {
-    val latestSignUpDouble: Double = usersTable
+    val latestSignUpDouble: Double = combinedTable
       .select(max("signupTime"))
       .first()
       .getAs[Double]("max(signupTime)")
@@ -282,7 +402,6 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     val latestSignUpMillis: Long = (1000 * latestSignUpDouble).toLong
     Common.timeFormatter.print(latestSignUpMillis)
   }
-
 }
 
 object DataAnalyzer {
@@ -318,14 +437,14 @@ object DataAnalyzer {
                           itemId: String,
                           price: Double,
                           quantity: Int,
-                          timestamp: Long)
+                          eventTime: Long)
   extends Serializable
 
   case class Views(
                     userId: String,
                     itemId: String,
-                    timestamp: Long,
-                    pagetype: String)
+                    eventTime: Long,
+                    pageType: String)
   extends Serializable
 
 }
