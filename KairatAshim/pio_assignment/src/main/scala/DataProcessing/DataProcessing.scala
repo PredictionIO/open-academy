@@ -1,7 +1,7 @@
 package DataProcessing
 
 import Common.CaseClasses.{User, UsersAd, View}
-import DataProcessing.customClasses.{Conversion}
+import DataProcessing.customClasses.{FinalData, Conversion}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.{DataFrame, SQLContext, UserDefinedFunction}
 import Common.Common
@@ -9,10 +9,8 @@ import org.apache.spark.sql.functions._
 import org.joda.time.DateTime
 
 
-class DataProcessing(val filesPath : String){
-  val sparkConf: SparkConf = Common.getSparkConf("DATA_PROCESSING");
-  val sparkContext: SparkContext = new SparkContext(sparkConf)
-  val sqlContext: SQLContext = new SQLContext(sparkContext);
+class DataProcessing(val filesPath : String, val sparkContext : SparkContext){
+  val sqlContext: SQLContext = new SQLContext(sparkContext)
 
   import sqlContext.implicits._
 
@@ -218,13 +216,31 @@ class DataProcessing(val filesPath : String){
 
   def getFinalDF() : DataFrame = {
 
-    val returnDF : DataFrame = filteredUsersDF
+    val intermediateDF : DataFrame = filteredUsersDF
       .join(aggregateRevenueDF, filteredUsersDF("userId") === aggregateRevenueDF("id"), "left_outer")
       .drop("id")
       .na
       .fill(0.0, Seq("sixMonthsRevenue"))
 
-    returnDF
+//    val returnDF : DataFrame =
+//      intermediateDF
+//      .rdd
+//      .map(row => {
+//      FinalData(
+//        row.getAs[String]("userId"),
+//        row.getAs[Long]("signupTime"),
+//        row.getAs[String]("registerCountry"),
+//        row.getAs[String]("utmSource"),
+//        row.getAs[String]("utmCampaign"),
+//        row.getAs[String]("utmMedium"),
+//        row.getAs[String]("utmTerm"),
+//        row.getAs[String]("utmContent"),
+//        row.getAs[Double]("sixMonthsRevenue")
+//      )
+//    }).toDF
+
+    intermediateDF
+
   }
 
   var finalDF : DataFrame = getFinalDF()
@@ -251,6 +267,13 @@ class DataProcessing(val filesPath : String){
       .text("/Users/kairat/Desktop/pio_assignment/revenueCSV")
   }
 
+  def savePositiveSixMonthsRevenueAsParquet() : Unit = {
+
+    finalDF
+      .write
+      .parquet("/Users/kairat/Desktop/pio_assignment/revenueDFParquet")
+  }
+
 }
 
 object customClasses {
@@ -261,6 +284,18 @@ object customClasses {
                          quantity : Int,
                          eventTime : Long
                        ) extends Serializable
+
+  case class FinalData(
+                        userId : String,
+                        signupTime : Long,
+                        registerCountry : String,
+                        utmSource : String,
+                        utmCampaign : String,
+                        utmMedium : String,
+                        utmTerm : String,
+                        utmContent : String,
+                        sixMonthsRevenue : Double
+                      ) extends Serializable
 
 }
 
