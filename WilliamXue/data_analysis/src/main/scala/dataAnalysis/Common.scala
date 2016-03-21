@@ -20,6 +20,8 @@ object Common{
       .setAppName(appName)
       .set("spark.storage.memoryFraction", "0.05")
       .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+      .set("spark.kryoserializer.buffer.max", "256")
+      .set("spark.driver.maxResultSize", "2048")
       .set("spark.executor.cores", "2")
       .set("spark.executor.memory", "6G")
       .set("spark.default.parallelism", "24")

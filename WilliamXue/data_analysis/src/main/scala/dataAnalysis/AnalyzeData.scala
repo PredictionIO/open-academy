@@ -11,7 +11,5 @@ object AnalyzeData extends App {
 
   val analyzer: DataAnalyzer = new DataAnalyzer(sparkConf, DATAPATH)
 
-  analyzer.showCombinedTable()
-
-  analyzer.exportCombinedTableToCSV()
+  analyzer.printAllModelCoefficients()
 }

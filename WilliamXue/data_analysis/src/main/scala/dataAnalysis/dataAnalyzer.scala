@@ -2,6 +2,9 @@ package dataAnalysis
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
+import org.apache.spark.ml.classification.{LogisticRegression, LogisticRegressionModel}
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.param.Param
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Row, UserDefinedFunction, DataFrame, SQLContext}
 import org.joda.time.DateTime
@@ -28,8 +31,14 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
   // Initialize the master table containing all user info
   protected var combinedTable: DataFrame = _
 
+  // Initialize the table containing the binary feature vector
+  protected var binaryVectorTable: DataFrame = _
   loadTables()
 
+  // Initialize the models
+  protected var basicLogisticRegressionModel: LogisticRegressionModel = _
+
+  loadModels()
 
   private def loadTables() = {
     val usersDataPath = dataPath + "/preprocessed/users.parquet"
@@ -38,6 +47,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     val conversionsDataPath = dataPath + "/preprocessed/conversions.parquet"
     val viewsDataPath = dataPath + "/preprocessed/views.parquet"
     val sixMonthRevenueDataPath = dataPath + "/preprocessed/sixMonthRevenue.parquet"
+    val binaryVectorDataPath = dataPath + "/preprocessed/binaryVector.parquet"
 
     // Load the basic tables
     if (Files.exists(Paths.get(usersDataPath))) {
@@ -82,6 +92,13 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     } else {
       combinedTable = loadSixMonthRevenueTable()
       combinedTable.write.parquet(sixMonthRevenueDataPath)
+    }
+
+    if (Files.exists(Paths.get(binaryVectorDataPath))) {
+      binaryVectorTable = sqlContext.read.parquet(binaryVectorDataPath)
+    } else {
+      binaryVectorTable = loadBinaryResponseTable()
+      binaryVectorTable.write.parquet(binaryVectorDataPath)
     }
   }
 
@@ -288,6 +305,125 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
       combinedTableRDD
         .saveAsTextFile(exportDirectory + "/six_month_revenue_parts")
     }
+  }
+
+
+  // Binary Response
+  private def loadBinaryResponseTable(): DataFrame = {
+    val sortedRevenueRDD: RDD[(Row,Long)] = combinedTable
+      .sort($"sixMonthRevenue")
+      .rdd
+      .zipWithIndex
+
+    val numElements = sortedRevenueRDD.count
+    val ninetyFifthPercentileIndex = (0.95 * numElements).toLong
+
+    val sortedIndexableConversionsTable: RDD[(Long, Row)] = sortedRevenueRDD
+      .map{case(key, value) => (value, key)}
+
+    val ninetyFifthPercentileRow: Row = sortedIndexableConversionsTable
+      .lookup(ninetyFifthPercentileIndex)
+      .head
+
+    val ninetyFifthPercentileValue: Double = ninetyFifthPercentileRow
+      .getAs[Double]("sixMonthRevenue")
+
+
+    val binaryResponseUDF: UserDefinedFunction = udf((sixMonthRevenue: Double) => {
+      if (sixMonthRevenue > ninetyFifthPercentileValue) 1.0
+      else 0.0
+    })
+
+    val binaryResponseTable: DataFrame = combinedTable
+      .withColumn("binaryResponse", binaryResponseUDF($"sixMonthRevenue"))
+      .drop($"sixMonthRevenue")
+
+    var binarizedFieldsTable: DataFrame = new CategoricalBinarizer()
+      .train(binaryResponseTable, "userId")
+      .transform(binaryResponseTable, inputCol="userId", outputCol="binaryUserId")
+      .drop($"userId")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "signupTime")
+      .transform(binarizedFieldsTable, inputCol="signupTime", outputCol="binarySignupTime")
+      .drop($"signupTime")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "registerCountry")
+      .transform(binarizedFieldsTable, inputCol="registerCountry", outputCol="binaryRegisterCountry")
+      .drop($"registerCountry")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "utmSource")
+      .transform(binarizedFieldsTable, inputCol="utmSource", outputCol="binaryUtmSource")
+      .drop($"utmSource")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "utmCampaign")
+      .transform(binarizedFieldsTable, inputCol="utmCampaign", outputCol="binaryUtmCampaign")
+      .drop($"utmCampaign")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "utmMedium")
+      .transform(binarizedFieldsTable, inputCol="utmMedium", outputCol="binaryUtmMedium")
+      .drop($"utmMedium")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "utmTerm")
+      .transform(binarizedFieldsTable, inputCol="utmTerm", outputCol="binaryUtmTerm")
+      .drop($"utmTerm")
+
+    binarizedFieldsTable= new CategoricalBinarizer()
+      .train(binarizedFieldsTable, "utmContent")
+      .transform(binarizedFieldsTable, inputCol="utmContent", outputCol="binaryUtmContent")
+      .drop($"utmContent")
+
+    val assembler: VectorAssembler = new VectorAssembler()
+      .setInputCols(Array("binaryUserId",
+                          "binarySignupTime",
+                          "binaryRegisterCountry",
+                          "binaryUtmSource",
+                          "binaryUtmCampaign",
+                          "binaryUtmMedium",
+                          "binaryUtmTerm",
+                          "binaryUtmContent"))
+      .setOutputCol("features")
+
+    val featureTable: DataFrame = assembler.transform(binarizedFieldsTable)
+      .drop($"binaryUserId")
+      .drop($"binarySignupTime")
+      .drop($"binaryRegisterCountry")
+      .drop($"binaryUtmSource")
+      .drop($"binaryUtmCampaign")
+      .drop($"binaryUtmMedium")
+      .drop($"binaryUtmTerm")
+      .drop($"binaryUtmContent")
+
+    featureTable
+  }
+
+  private def loadModels() = {
+    basicLogisticRegressionModel = createLogisticRegressionModel(binaryVectorTable)
+  }
+
+  private def createLogisticRegressionModel(binaryVectorTable: DataFrame): LogisticRegressionModel = {
+    val lr: LogisticRegression = new LogisticRegression()
+      .setFeaturesCol("features")
+      .setLabelCol("binaryResponse")
+      .setMaxIter(10)
+
+    lr.fit(binaryVectorTable)
+  }
+
+  def printAllModelCoefficients()= {
+    val basicLRModelCoeffs = basicLogisticRegressionModel.coefficients
+    val basicLRModelFilteredCoeffs = basicLogisticRegressionModel
+      .coefficients
+      .toArray
+      .filter(_ > 0.5)
+
+    println("Basic Logistic Regression Coefficients size: " + basicLRModelCoeffs.size)
+    println("Basic Logistic Regression Coefficients size after filtering: " + basicLRModelFilteredCoeffs.length)
   }
 
   // Methods to show tables.
