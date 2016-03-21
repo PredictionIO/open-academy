@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b322571-3e28-4674-9498-f629b2be1ce1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/dataAnalysis/CategoricalBinarizer.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$delayedInit$body.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/Run$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/Run.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/AnalyzeData$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/AnalyzeData$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator10$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator10$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator2$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator4$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator6$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator8$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$$typecreator8$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Conversions$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Conversions$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Conversions.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Conversions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Items$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Items$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Items.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Items.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Users$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Users$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Users.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Users.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$UsersAds$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$UsersAds$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$UsersAds.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$UsersAds.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Views$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Views$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Views.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer$Views.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/dataAnalysis/DataAnalyzer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/data_analysis-assembly-1.0.jar" afterPath="$PROJECT_DIR$/target/scala-2.11/data_analysis-assembly-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/data_analysis_2.11-1.0.jar" afterPath="$PROJECT_DIR$/target/scala-2.11/data_analysis_2.11-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assembly/$global/streams/assembly-inputs" afterPath="$PROJECT_DIR$/target/streams/$global/assembly/$global/streams/assembly-inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator2$1.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator4$1.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Users$.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Users$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Users.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Users.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$UsersAds$.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$UsersAds$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$UsersAds.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$UsersAds.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer.class" afterPath="$PROJECT_DIR$/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/dataAnalysis/AnalyzeData.scala" afterPath="$PROJECT_DIR$/src/main/scala/dataAnalysis/AnalyzeData.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/dataAnalysis/Common.scala" afterPath="$PROJECT_DIR$/src/main/scala/dataAnalysis/Common.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/assembly/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/assembly/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../revenue_analysis/customer_ltv_analysis_plot.R" afterPath="$PROJECT_DIR$/../revenue_analysis/customer_ltv_analysis_plot.R" />
     </list>
     <ignored path="data_analysis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,8 +52,8 @@
       <file leaf-file-name="DataAnalyzer.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/dataAnalysis/DataAnalyzer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07790368">
-              <caret line="273" column="38" selection-start-line="273" selection-start-column="38" selection-end-line="273" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.6090652">
+              <caret line="422" column="23" selection-start-line="422" selection-start-column="23" selection-end-line="422" selection-end-column="23" />
               <folding>
                 <element signature="e#22#55#0" expanded="true" />
               </folding>
@@ -1175,8 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/dataAnalysis/DataAnalyzer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07790368">
-          <caret line="273" column="38" selection-start-line="273" selection-start-column="38" selection-end-line="273" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.6090652">
+          <caret line="422" column="23" selection-start-line="422" selection-start-column="23" selection-end-line="422" selection-end-column="23" />
           <folding>
             <element signature="e#22#55#0" expanded="true" />
           </folding>

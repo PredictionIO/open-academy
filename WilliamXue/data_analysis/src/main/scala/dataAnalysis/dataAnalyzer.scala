@@ -420,7 +420,7 @@ class DataAnalyzer(var sparkConf: SparkConf, var dataPath: String) {
     val basicLRModelFilteredCoeffs = basicLogisticRegressionModel
       .coefficients
       .toArray
-      .filter(_ > 0.5)
+      .filter(_ > 0.05)
 
     println("Basic Logistic Regression Coefficients size: " + basicLRModelCoeffs.size)
     println("Basic Logistic Regression Coefficients size after filtering: " + basicLRModelFilteredCoeffs.length)
