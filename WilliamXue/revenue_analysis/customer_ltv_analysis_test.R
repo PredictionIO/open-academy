@@ -46,4 +46,6 @@ samples_95th_percentile_test_stat <- quantile(anderson_darling_dist_stats, probs
 customer_data_test_stat <- calculateAndersonDarlingTestStat(customer_value$revenue)
  
 reject_null_hypothesis <- (customer_data_test_stat > samples_95th_percentile_test_stat)
+print(paste("95th percentile stat:", toString(samples_95th_percentile_test_stat), sep=" "))
+print(paste("Data stat:", toString(customer_data_test_stat), sep=" "))
 print(reject_null_hypothesis)
