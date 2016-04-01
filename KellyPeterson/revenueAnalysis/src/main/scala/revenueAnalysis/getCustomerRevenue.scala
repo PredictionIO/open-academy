@@ -2,15 +2,10 @@ package revenueAnalysis
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.SQLContext
 import org.joda.time.DateTime
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.functions
-import org.apache.spark.sql.GroupedData
-import org.apache.spark.sql.{ UserDefinedFunction, DataFrame, SQLContext }
+import org.apache.spark.sql.{ UserDefinedFunction, DataFrame, SQLContext, GroupedData }
 import java.lang.Math
-
 import java.util.concurrent.TimeUnit
 
 object GetCustomerRevenue extends App {
@@ -19,9 +14,9 @@ object GetCustomerRevenue extends App {
   val sparkContext: SparkContext = new SparkContext(sparkConf)
   val sqlContext: SQLContext = new SQLContext(sparkContext)
 
-
   import sqlContext.implicits._
 
+  // data cleaning & prepping for Q1
   // a, b.
 
   var conversionDF: DataFrame = sqlContext.read.parquet("data/conversions.parquet")
@@ -77,7 +72,6 @@ object GetCustomerRevenue extends App {
   val aggRevenueById: DataFrame = aggRevenueByUser.withColumnRenamed("userId", "id")
 
   // e.
-
   val joinedUsers: DataFrame = usersAggActivity.join(aggRevenueById, usersAggActivity("userId") === aggRevenueById("id"), "left_outer")
   joinedUsers.show()
   val usersNoNulls: DataFrame = joinedUsers.na.fill(Map("sixMonthRevenue" -> 0.0)).drop("id")
