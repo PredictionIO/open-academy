@@ -23,6 +23,7 @@ gammaLikelihood <- function(par) {
 }
 
 gamma_parameters = optim(par=c(k=1,theta=0.1), fn=gammaLikelihood, method="L-BFGS-B", control=c(fnscale=-1), lower=0.0001)$par
+print(gamma_parameters)
 
 curve(
   dgamma(x, shape=gamma_parameters["k"], scale=gamma_parameters["theta"]),
@@ -52,6 +53,7 @@ invGammaLikelihood <- function(par) {
 }
 
 inv_gamma_parameters <- optim(par=c(alpha=1,beta=0.1), fn=invGammaLikelihood, method="L-BFGS-B", control=c(fnscale=-1), lower=0.0001)$par
+print(inv_gamma_parameters)
 
 curve(
   invGamma(x, alpha=inv_gamma_parameters["alpha"], beta=inv_gamma_parameters["beta"]),

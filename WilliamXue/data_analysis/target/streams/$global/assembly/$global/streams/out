@@ -7,27 +7,73 @@
 [0m[[33mwarn[0m] [0mMerging 'META-INF/maven/joda-time/joda-time/pom.properties' with strategy 'discard'[0m
 [0m[[33mwarn[0m] [0mMerging 'META-INF/maven/joda-time/joda-time/pom.xml' with strategy 'discard'[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 3 files[0m
-[0m[[0minfo[0m] [0mSHA-1: b1624f7aa1679aa8666199a1a07a90500a9da969[0m
+[0m[[0minfo[0m] [0mSHA-1: 326e37c90398f3603774094e112af7943eafc8ab[0m
 [0m[[0minfo[0m] [0mPackaging /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/scala-2.11/data_analysis-assembly-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	META-INF/LICENSE_joda-time-2.9.2.txt[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/6d7bcf9ca0a893e1b0e4b96b8af5c05f7ebe2443_36d6e77a419cb455e6fd5909f6f96b168e21e9d0_da39a3ee5e6b4b0d3255bfef95601890afd80709/META-INF/LICENSE_joda-time-2.9.2.txt[0m
 [0m[[0mdebug[0m] [0m	META-INF/NOTICE_joda-time-2.9.2.txt[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/6d7bcf9ca0a893e1b0e4b96b8af5c05f7ebe2443_36d6e77a419cb455e6fd5909f6f96b168e21e9d0_da39a3ee5e6b4b0d3255bfef95601890afd80709/META-INF/NOTICE_joda-time-2.9.2.txt[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/AnalyzeData$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/AnalyzeData$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/AnalyzeData$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/AnalyzeData$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/AnalyzeData.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/AnalyzeData.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/CategoricalBinarizer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/CategoricalBinarizer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/CategoricalBinarizer.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/CategoricalBinarizer.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/CategoricalBinarizerModel$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/CategoricalBinarizerModel$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/CategoricalBinarizerModel$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/CategoricalBinarizerModel$$typecreator1$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/CategoricalBinarizerModel.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/CategoricalBinarizerModel.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/Common$.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/Common$.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/Common.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/Common.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$10.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$10.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$2.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$6.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$6.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$7.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$7.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$8.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$8.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$anonfun$9.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$anonfun$9.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator10$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator10$1.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator2$1.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator2$1.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator4$1.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator4$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator6$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator6$1.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$$typecreator8$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$$typecreator8$1.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Conversions$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Conversions$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Conversions.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Conversions.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Items$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Items$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Items.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Items.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Users$.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Users$.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Users.class[0m
@@ -36,14 +82,12 @@
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$UsersAds$.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$UsersAds.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$UsersAds.class[0m
-[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$delayedInit$body.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Views$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Views$.class[0m
+[0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer$Views.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer$Views.class[0m
 [0m[[0mdebug[0m] [0m	dataAnalysis/DataAnalyzer.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/DataAnalyzer.class[0m
-[0m[[0mdebug[0m] [0m	dataAnalysis/Run$.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/Run$.class[0m
-[0m[[0mdebug[0m] [0m	dataAnalysis/Run.class[0m
-[0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/14938ec45e0f77d7bcaff10087cec850e45540e8_dir/dataAnalysis/Run.class[0m
 [0m[[0mdebug[0m] [0m	library.properties[0m
 [0m[[0mdebug[0m] [0m	  /Users/williamxue/Dropbox (MIT)/PredictionIO/open-academy/WilliamXue/data_analysis/target/streams/$global/assemblyOption/$global/streams/assembly/58f0bb21ffe1975d95d0649586af0deb62404840_f75e7acabd57b213d6f61483240286c07213ec0e_da39a3ee5e6b4b0d3255bfef95601890afd80709/library.properties[0m
 [0m[[0mdebug[0m] [0m	org/joda/time/Chronology.class[0m
